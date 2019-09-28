@@ -37,25 +37,19 @@ impl Solution {
         ];
         let mut number = num;
         let mut mutilples = 1;
-        let mut strs = Vec::new();
+        let mut roman_str = String::new();
         for symbol in &symbols {
             let current_num = number % 10;
             if (current_num == 0) || (symbol.1 == current_num*mutilples) {
                 number /= 10;
                 mutilples *= 10;
                 if current_num != 0 {
-                    // strs.push(symbol.0);
-                    strs.insert(0, symbol.0);
+                    roman_str = format!("{}{}", symbol.0.to_string(), roman_str);
                 }
             }
             if number <= 0 { break; }
         }
-        // strs.reverse();
-        let mut result = String::new();
-        for a_str in &strs{
-            result.push_str(a_str)
-        }
-        result
+        roman_str
     }
 }
 
