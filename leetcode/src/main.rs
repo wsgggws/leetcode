@@ -5,6 +5,7 @@ pub mod p0012_integer_to_roman;
 pub mod p0013_roman_to_integer;
 pub mod p0014_longest_common_prefix;
 pub mod p0038_count_and_say;
+pub mod p0048_rotate_image;
 pub mod p0050_pow_x_n;
 
 
