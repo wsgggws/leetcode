@@ -1,3 +1,4 @@
+pub mod p0001_two_sum;
 pub mod p0007_reverse_integer;
 pub mod p0008_string_to_integer;
 pub mod p0009_palindrome_number;
