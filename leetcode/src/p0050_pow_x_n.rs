@@ -26,31 +26,42 @@ pub struct Solution {}
 
 impl Solution {
     pub fn my_pow(x: f64, n: i32) -> f64 {
-        // Error: Last executed input:
+        // 直接调用内置的库, 能够快速通过.
+        x.powi(n)
+
+        // Time Limit Exceeded Error: Last executed input:
         // 0.00001
         // 2147483647
-
-        // let mut flag = true;
-        // if n < 0 { flag = false; }
         // let mut result = 1.0;
         // let mut x = x;
-        // let mut counts = n;
-        // if !flag {
+        // let mut counts: i64 = n as i64;
+        // if counts < 0 {
         //     x = 1.0/x;
-        //     counts += 1;
-        // }else{
-        //     x = 1.0*x;
-        //     counts -= 1;
+        //     counts = -counts;
         // }
-        // result *= x;
-        // if counts < 0 { counts = -counts; }
         // for _ in 0..counts{
         //     result *= x;
         // }
         // result
 
-        // 直接调用内置的库, 能够快速通过.
-        x.powi(n)
+
+        // // 手动实现二分法快速幕, 能通过
+        // if n == 0 { return 1.0; }
+        // let mut result = 1.0;
+        // // 最小最大的整数需要考虑, 所以转换成i64
+        // let mut n: i64 = n as i64;
+        // let mut x = x;
+        // if n < 0 {
+        //     n = -n;
+        //     x = 1.0/x;
+        // }
+        // // x**n = x**2**(a-1) ... * ... *  x**2**0  其中a为n二进制里为1的从右到左的index
+        // while n > 0 {
+        //     if n & 1 == 1 { result *= x; }
+        //     x *= x;
+        //     n >>= 1;
+        // }
+        // result
     }
 }
 
