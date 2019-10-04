@@ -13,6 +13,7 @@ pub mod p0038_count_and_say;
 pub mod p0048_rotate_image;
 pub mod p0049_group_anagrams;
 pub mod p0050_pow_x_n;
+pub mod p0053_maximum_subarray;
 pub mod p0167_two_sum_ii_array_is_sorted;
 
 
