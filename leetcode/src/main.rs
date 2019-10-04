@@ -8,6 +8,7 @@ pub mod p0014_longest_common_prefix;
 pub mod p0020_valid_parentheses;
 pub mod p0027_remove_element;
 pub mod p0028_implement_strstr;
+pub mod p0035_search_insert_position;
 pub mod p0038_count_and_say;
 pub mod p0048_rotate_image;
 pub mod p0049_group_anagrams;
