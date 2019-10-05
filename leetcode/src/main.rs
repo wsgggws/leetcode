@@ -16,6 +16,7 @@ pub mod p0050_pow_x_n;
 pub mod p0053_maximum_subarray;
 pub mod p0058_length_of_last_word;
 pub mod p0066_plus_one;
+pub mod p0069_sqrt_x;
 pub mod p0167_two_sum_ii_array_is_sorted;
 
 
