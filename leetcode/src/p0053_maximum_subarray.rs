@@ -34,7 +34,7 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_53() {
+    fn max_sub_array_test() {
         assert_eq!(Solution::max_sub_array(vec![-1]), -1);
         assert_eq!(Solution::max_sub_array(vec![-1, 0]), 0);
         assert_eq!(Solution::max_sub_array(vec![-8, -2]), -2);
