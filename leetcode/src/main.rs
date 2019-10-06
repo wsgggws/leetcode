@@ -19,6 +19,7 @@ pub mod p0066_plus_one;
 pub mod p0069_sqrt_x;
 pub mod p0070_climbing_stairs;
 pub mod p0118_pascals_triangle;
+pub mod p0119_pascals_triangle_ii;
 pub mod p0167_two_sum_ii_array_is_sorted;
 
 
