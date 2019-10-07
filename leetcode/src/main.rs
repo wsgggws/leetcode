@@ -29,6 +29,7 @@ pub mod p0167_two_sum_ii_array_is_sorted;
 pub mod p0168_excel_sheet_column_title;
 pub mod p0171_excel_sheet_column_number;
 pub mod p0172_factorial_trailing_zeroes;
+pub mod p0189_rotate_array;
 
 
 fn main() {
