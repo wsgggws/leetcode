@@ -31,6 +31,7 @@ pub mod p0171_excel_sheet_column_number;
 pub mod p0172_factorial_trailing_zeroes;
 pub mod p0189_rotate_array;
 pub mod p0202_happy_number;
+pub mod p0217_contains_duplicate;
 
 
 fn main() {
