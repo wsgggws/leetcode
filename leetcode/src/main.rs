@@ -35,6 +35,7 @@ pub mod p0217_contains_duplicate;
 pub mod p0219_contains_duplicate_ii;
 pub mod p0231_power_of_two;
 pub mod p0258_add_digits;
+pub mod p0263_ugly_number;
 
 
 fn main() {
