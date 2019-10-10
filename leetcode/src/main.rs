@@ -37,6 +37,7 @@ pub mod p0231_power_of_two;
 pub mod p0258_add_digits;
 pub mod p0263_ugly_number;
 pub mod p0268_missing_number;
+pub mod p0326_power_of_three;
 
 
 fn main() {
