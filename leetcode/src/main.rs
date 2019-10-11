@@ -41,6 +41,7 @@ pub mod p0326_power_of_three;
 pub mod p0342_power_of_four;
 pub mod p0344_reverse_string;
 pub mod p0349_intersection_of_two_arrays;
+pub mod p0367_valid_perfect_square;
 
 
 fn main() {
