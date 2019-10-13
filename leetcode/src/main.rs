@@ -47,6 +47,7 @@ pub mod p0371_sum_of_two_integers;
 pub mod p0383_ransom_note;
 pub mod p0387_first_unique_character_in_a_string;
 pub mod p0389_find_the_difference;
+pub mod p0392_is_subsequence;
 
 
 fn main() {
