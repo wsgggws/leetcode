@@ -48,6 +48,7 @@ pub mod p0383_ransom_note;
 pub mod p0387_first_unique_character_in_a_string;
 pub mod p0389_find_the_difference;
 pub mod p0392_is_subsequence;
+pub mod p0405_convert_a_number_to_hexadecimal;
 
 
 fn main() {
