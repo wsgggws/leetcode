@@ -50,6 +50,7 @@ pub mod p0389_find_the_difference;
 pub mod p0392_is_subsequence;
 pub mod p0405_convert_a_number_to_hexadecimal;
 pub mod p0412_fizz_buzz;
+pub mod p0414_third_maximum_number;
 
 
 fn main() {
