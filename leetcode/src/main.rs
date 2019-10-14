@@ -54,6 +54,7 @@ pub mod p0414_third_maximum_number;
 pub mod p0415_add_strings;
 pub mod p0434_number_of_segments_in_a_string;
 pub mod p0441_arranging_coins;
+pub mod p0443_string_compression;
 
 
 fn main() {
