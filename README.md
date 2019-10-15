@@ -1,5 +1,5 @@
 # Rust Leetcode
-练习使用Rust语言刷[leetcode](https://leetcode.com/problemset/all/)算法题目
+练习使用Rust语言刷[leetcode](https://leetcode.com/problemset/all/)或者[力扣](https://leetcode-cn.com/problemset/all/)算法题目
 
 ## Environment
 - rustc 1.37.0
@@ -96,5 +96,8 @@ Rust一切皆表达式, 表达式皆有值, 值皆有类型.
 
 ## 参考资料
 - <<Rust编程之道>>
+- https://prev.rust-lang.org/zh-CN/documentation.html
 - https://dev.to/cad97/rust-must-know-crates-5ad8
 - https://mp.weixin.qq.com/s/XYAc3wMfF50vYNnv_GzFjw
+- https://rust-lang-nursery.github.io/rust-cookbook
+- https://rustwiki.org/zh-CN/rust-by-example/custom_types.html
