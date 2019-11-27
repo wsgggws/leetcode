@@ -24,6 +24,7 @@ pub mod p0119_pascals_triangle_ii;
 pub mod p0121_best_time_to_buy_and_sell_stock;
 pub mod p0122_best_time_to_buy_and_sell_stock_ii;
 pub mod p0125_valid_palindrome;
+pub mod p0134_gas_station;
 pub mod p0136_single_number;
 pub mod p0167_two_sum_ii_array_is_sorted;
 pub mod p0168_excel_sheet_column_title;
