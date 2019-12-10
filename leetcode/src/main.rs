@@ -5,6 +5,7 @@ pub mod p0009_palindrome_number;
 pub mod p0012_integer_to_roman;
 pub mod p0013_roman_to_integer;
 pub mod p0014_longest_common_prefix;
+pub mod p0015_3sum;
 pub mod p0020_valid_parentheses;
 pub mod p0027_remove_element;
 pub mod p0028_implement_strstr;
