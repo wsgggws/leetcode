@@ -20,6 +20,7 @@ pub mod p0066_plus_one;
 pub mod p0067_add_binary;
 pub mod p0069_sqrt_x;
 pub mod p0070_climbing_stairs;
+pub mod p0088_merge_sorted_array;
 pub mod p0118_pascals_triangle;
 pub mod p0119_pascals_triangle_ii;
 pub mod p0121_best_time_to_buy_and_sell_stock;
