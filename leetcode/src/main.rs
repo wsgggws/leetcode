@@ -62,6 +62,7 @@ pub mod p0448_find_all_numbers_disappeared_in_an_array;
 pub mod p0453_minimum_moves_to_equal_array_elements;
 pub mod p0461_hamming_distance;
 pub mod p0633_sum_of_square_numbers;
+pub mod p0680_valid_palindrome_ii;
 
 fn main() {
     println!("Hello, rust and leetcode!");
