@@ -10,3 +10,9 @@
 cargo test  // 测试所有的测试
 cargo test p0007_reverse_integer  // 只测试单个模块下的测试
 ```
+
+## 双指针
+- [167. Two Sum II - Input array is sorted (Easy)](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)
+- [633. Sum of Square Numbers (Easy)](https://leetcode.com/problems/sum-of-square-numbers/)
+- [345. Reverse Vowels of a String (Easy)](https://leetcode.com/problems/reverse-vowels-of-a-string/)
+- [680. Valid Palindrome II (Easy)](https://leetcode.com/problems/valid-palindrome-ii/)
