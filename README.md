@@ -18,3 +18,6 @@ cargo test p0007_reverse_integer  // 只测试单个模块下的测试
 - [680. Valid Palindrome II (Easy)](https://leetcode.com/problems/valid-palindrome-ii/)
 - [88. Merge Sorted Array (Easy)](https://leetcode.com/problems/merge-sorted-array/)
 - [524. Longest Word in Dictionary through Deleting (Medium)](https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/)
+
+## 二分法
+- [69. Sqrt(x) (Easy)](https://leetcode.com/problems/sqrtx/)

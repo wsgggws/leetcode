@@ -20,12 +20,10 @@
 // The size of the dictionary won't exceed 1,000.
 // The length of all the strings in the input won't exceed 1,000.
 
-#[allow(dead_code)]
-struct Solution {}
+pub struct Solution {}
 
 use std::cmp::Ordering;
 impl Solution {
-    #[allow(dead_code)]
     pub fn find_longest_word(s: String, d: Vec<String>) -> String {
         let mut result: String = "".to_owned();
         for target in d.iter() {

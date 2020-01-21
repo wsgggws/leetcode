@@ -20,10 +20,28 @@
 
 pub struct Solution {}
 
-
 impl Solution {
     pub fn my_sqrt(x: i32) -> i32 {
-        (x as f64).sqrt() as i32
+        // 使用标准库里的sqrt, 一行代码解决
+        // (x as f64).sqrt() as i32
+
+        // 使用二分法
+        if x <= 1 {
+            return x;
+        }
+        let (mut left, mut right) = (1, x);
+        while left <= right {
+            let mid: i32 = left + (right - left) / 2;
+            let sqrt = x / mid;
+            if sqrt == mid {
+                return mid;
+            } else if mid > sqrt {
+                right = mid - 1;
+            } else {
+                left = mid + 1;
+            }
+        }
+        right
     }
 }
 

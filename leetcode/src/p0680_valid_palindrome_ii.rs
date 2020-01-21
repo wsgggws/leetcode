@@ -11,11 +11,9 @@
 // Note:
 // The string will only contain lowercase characters a-z. The maximum length of the string is 50000.
 
-#[allow(dead_code)]
-struct Solution {}
+pub struct Solution {}
 
 impl Solution {
-    #[allow(dead_code)]
     pub fn valid_palindrome(s: String) -> bool {
         if s.is_empty() {
             return true;

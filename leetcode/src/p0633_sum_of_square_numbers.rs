@@ -12,11 +12,9 @@
 // Input: 3
 // Output: False
 
-#[allow(dead_code)]
-struct Solution {}
+pub struct Solution {}
 
 impl Solution {
-    #[allow(dead_code)]
     pub fn judge_square_sum(c: i32) -> bool {
         // 0 也是整数
         let (mut i, mut j) = (0, (c as f32).sqrt() as i32);

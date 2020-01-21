@@ -15,11 +15,9 @@
 
 // Output: [1,2,2,3,5,6]
 
-#[allow(dead_code)]
-struct Solution {}
+pub struct Solution {}
 
 impl Solution {
-    #[allow(dead_code)]
     pub fn merge(nums1: &mut Vec<i32>, m: i32, nums2: &mut Vec<i32>, n: i32) {
         let mut index_i = m - 1;
         let mut index_j = n - 1;
