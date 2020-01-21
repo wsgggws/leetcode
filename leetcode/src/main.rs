@@ -65,6 +65,7 @@ pub mod p0461_hamming_distance;
 pub mod p0524_longest_word_in_dictionary_through_deleting;
 pub mod p0633_sum_of_square_numbers;
 pub mod p0680_valid_palindrome_ii;
+pub mod p0744_find_smalllest_greater_than_target;
 
 fn main() {
     println!("Hello, rust and leetcode!");
