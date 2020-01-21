@@ -21,4 +21,5 @@ cargo test p0007_reverse_integer  // 只测试单个模块下的测试
 
 ## 二分法
 - [69. Sqrt(x) (Easy)](https://leetcode.com/problems/sqrtx/)
-- [744. Find Smallest Letter Greater Than Target](https://leetcode.com/problems/find-smallest-letter-greater-than-target/)
+- [744. Find Smallest Letter Greater Than Target(Easy)](https://leetcode.com/problems/find-smallest-letter-greater-than-target/)
+- [540. Single Element in a Sorted Array(Medium)](https://leetcode.com/problems/single-element-in-a-sorted-array/)
