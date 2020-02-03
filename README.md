@@ -29,3 +29,5 @@ cargo test p0007_reverse_integer  // 只测试单个模块下的测试
 ## 数学
 - [204. Count Primes (Easy)](https://leetcode.com/problems/count-primes/)
 - [504. Base 7 (Easy)](https://leetcode.com/problems/base-7/)
+- [405. Convert a Number to Hexadecimal (Easy)](https://leetcode.com/problems/convert-a-number-to-hexadecimal/)
+- [168. Excel Sheet Column Title (Easy)](https://leetcode.com/problems/excel-sheet-column-title/)
