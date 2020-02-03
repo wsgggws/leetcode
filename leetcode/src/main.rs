@@ -65,6 +65,7 @@ pub mod p0443_string_compression;
 pub mod p0448_find_all_numbers_disappeared_in_an_array;
 pub mod p0453_minimum_moves_to_equal_array_elements;
 pub mod p0461_hamming_distance;
+pub mod p0462_minimum_moves_to_equal_array_element_ii;
 pub mod p0504_base_7;
 pub mod p0524_longest_word_in_dictionary_through_deleting;
 pub mod p0540_single_element_in_a_sorted_array;

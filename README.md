@@ -32,3 +32,6 @@ cargo test p0007_reverse_integer  // 只测试单个模块下的测试
 - [405. Convert a Number to Hexadecimal (Easy)](https://leetcode.com/problems/convert-a-number-to-hexadecimal/)
 - [168. Excel Sheet Column Title (Easy)](https://leetcode.com/problems/excel-sheet-column-title/)
 - [172. Factorial Trailing Zeroes (Easy)](https://leetcode.com/problems/factorial-trailing-zeroes/)
+- [67. Add Binary (Easy)](https://leetcode.com/problems/add-binary/)
+- [415. Add Strings (Easy)](https://leetcode.com/problems/add-strings/)
+- [462. Minimum Moves to Equal Array Elements II (Medium)](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/)
