@@ -27,4 +27,5 @@ cargo test p0007_reverse_integer  // 只测试单个模块下的测试
 - [34. Find First and Last Position of Element in Sorted Array(Medium)](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
 
 ## 数学
-- [204. Count Primes](https://leetcode.com/problems/count-primes/)
+- [204. Count Primes (Easy)](https://leetcode.com/problems/count-primes/)
+- [504. Base 7 (Easy)](https://leetcode.com/problems/base-7/)
