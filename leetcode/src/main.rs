@@ -70,6 +70,7 @@ pub mod p0462_minimum_moves_to_equal_array_element_ii;
 pub mod p0504_base_7;
 pub mod p0524_longest_word_in_dictionary_through_deleting;
 pub mod p0540_single_element_in_a_sorted_array;
+pub mod p0628_maximum_product_of_three_numbers;
 pub mod p0633_sum_of_square_numbers;
 pub mod p0680_valid_palindrome_ii;
 pub mod p0744_find_smalllest_greater_than_target;
