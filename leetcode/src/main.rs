@@ -39,6 +39,7 @@ pub mod p0189_rotate_array;
 pub mod p0198_house_robber;
 pub mod p0202_happy_number;
 pub mod p0204_count_primes;
+pub mod p0213_house_robber_ii;
 pub mod p0217_contains_duplicate;
 pub mod p0219_contains_duplicate_ii;
 pub mod p0231_power_of_two;
