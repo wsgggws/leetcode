@@ -25,6 +25,7 @@ cargo test p0007_reverse_integer  // 只测试单个模块下的测试
 - [540. Single Element in a Sorted Array(Medium)](https://leetcode.com/problems/single-element-in-a-sorted-array/)
 - [153. Find Minimum in Rotated Sorted Array (Medium)](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
 - [34. Find First and Last Position of Element in Sorted Array(Medium)](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
+- [367. Valid Perfect Square (Easy)](https://leetcode.com/problems/valid-perfect-square/)
 
 ## 数学
 - [204. Count Primes (Easy)](https://leetcode.com/problems/count-primes/)
@@ -35,3 +36,5 @@ cargo test p0007_reverse_integer  // 只测试单个模块下的测试
 - [67. Add Binary (Easy)](https://leetcode.com/problems/add-binary/)
 - [415. Add Strings (Easy)](https://leetcode.com/problems/add-strings/)
 - [462. Minimum Moves to Equal Array Elements II (Medium)](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/)
+- [169. Majority Element (Easy)](https://leetcode.com/problems/majority-element/)
+- [238. Product of Array Except Self (Medium)](https://leetcode.com/problems/product-of-array-except-self/)
