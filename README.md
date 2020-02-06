@@ -39,3 +39,7 @@ cargo test p0007_reverse_integer  // 只测试单个模块下的测试
 - [169. Majority Element (Easy)](https://leetcode.com/problems/majority-element/)
 - [238. Product of Array Except Self (Medium)](https://leetcode.com/problems/product-of-array-except-self/)
 - [628. Maximum Product of Three Numbers (Easy)](https://leetcode.com/problems/maximum-product-of-three-numbers/)
+
+## 动态规划
+- [70. Climbing Stairs (Easy)](https://leetcode.com/problems/climbing-stairs/)
+- [198. House Robber (Easy)](https://leetcode.com/problems/house-robber/)
