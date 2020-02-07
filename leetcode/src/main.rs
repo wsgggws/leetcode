@@ -17,6 +17,7 @@ pub mod p0049_group_anagrams;
 pub mod p0050_pow_x_n;
 pub mod p0053_maximum_subarray;
 pub mod p0058_length_of_last_word;
+pub mod p0062_unique_paths;
 pub mod p0064_minimum_path_sum;
 pub mod p0066_plus_one;
 pub mod p0067_add_binary;
