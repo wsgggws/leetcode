@@ -46,3 +46,4 @@ cargo test p0007_reverse_integer  // 只测试单个模块下的测试
 - [198. House Robber (Easy)](https://leetcode.com/problems/house-robber/)
 - [213. House Robber II (Medium)](https://leetcode.com/problems/house-robber-ii/)
 - [64. Minimum Path Sum (Medium)](https://leetcode.com/problems/minimum-path-sum/)
+- [343. Integer Break (Medim)](https://leetcode.com/problems/integer-break/)
