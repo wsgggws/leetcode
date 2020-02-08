@@ -50,6 +50,7 @@ pub mod p0258_add_digits;
 pub mod p0263_ugly_number;
 pub mod p0268_missing_number;
 pub mod p0279_perfect_squares;
+pub mod p0300_longest_increasing_subsequence;
 pub mod p0326_power_of_three;
 pub mod p0342_power_of_four;
 pub mod p0343_integer_break;
