@@ -50,3 +50,4 @@ cargo test p0007_reverse_integer  // 只测试单个模块下的测试
 - [279. Perfect Squares(Medium)](https://leetcode.com/problems/perfect-squares/)
 - [300. Longest Increasing Subsequence (Medium)](https://leetcode.com/problems/longest-increasing-subsequence/)
 - [376. Wiggle Subsequence (Medium)](https://leetcode.com/problems/wiggle-subsequence/)
+- [646. Maximum Length of Pair Chain (Medium)](https://leetcode.com/problems/maximum-length-of-pair-chain/)
