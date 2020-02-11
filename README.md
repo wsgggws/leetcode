@@ -54,3 +54,6 @@ cargo test p0007_reverse_integer  // 只测试单个模块下的测试
 - [1143. Longest Common Subsequence (Medium)](https://leetcode.com/problems/longest-common-subsequence/)
 - [416. Partition Equal Subset Sum (Medium)](https://leetcode.com/problems/partition-equal-subset-sum/)
 - [494. Target Sum (Medium)](https://leetcode.com/problems/target-sum/)
+
+## 搜索
+- [1091. Shortest Path in Binary Matrix(Medium)](https://leetcode.com/problems/shortest-path-in-binary-matrix/)
