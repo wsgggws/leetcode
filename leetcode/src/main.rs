@@ -83,6 +83,7 @@ pub mod p0628_maximum_product_of_three_numbers;
 pub mod p0633_sum_of_square_numbers;
 pub mod p0646_maximum_length_of_pair_chain;
 pub mod p0680_valid_palindrome_ii;
+pub mod p0695_max_area_of_island;
 pub mod p0744_find_smalllest_greater_than_target;
 pub mod p1091_shortest_path_in_binary_matrix;
 pub mod p1143_longest_common_subsequence;

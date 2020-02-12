@@ -56,4 +56,7 @@ cargo test p0007_reverse_integer  // 只测试单个模块下的测试
 - [494. Target Sum (Medium)](https://leetcode.com/problems/target-sum/)
 
 ## 搜索
+### BFS
 - [1091. Shortest Path in Binary Matrix(Medium)](https://leetcode.com/problems/shortest-path-in-binary-matrix/)
+### DFS
+- [695. Max Area of Island (Medium)](https://leetcode.com/problems/max-area-of-island/)
