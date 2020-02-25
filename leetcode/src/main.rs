@@ -82,6 +82,7 @@ pub mod p0540_single_element_in_a_sorted_array;
 pub mod p0628_maximum_product_of_three_numbers;
 pub mod p0633_sum_of_square_numbers;
 pub mod p0646_maximum_length_of_pair_chain;
+pub mod p0650_2_keys_keyboard;
 pub mod p0680_valid_palindrome_ii;
 pub mod p0695_max_area_of_island;
 pub mod p0744_find_smalllest_greater_than_target;
