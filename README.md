@@ -12,7 +12,8 @@ cargo test p0007_reverse_integer  // 只测试单个模块下的测试
 ```
 
 ## 基础
-- [3. Longest Substring Without Repeating Characters (Medium)](https://leetcode.com/problems/longest-substring-without-repeating-characters/?tab=Description)
+- [3. Longest Substring Without Repeating Characters (Medium)](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
+- [11. Container With Most Water (Medium)](https://leetcode.com/problems/container-with-most-water/)
 
 ## 双指针
 - [167. Two Sum II - Input array is sorted (Easy)](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)
