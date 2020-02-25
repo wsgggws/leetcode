@@ -11,6 +11,9 @@ cargo test  // 测试所有的测试
 cargo test p0007_reverse_integer  // 只测试单个模块下的测试
 ```
 
+## 基础
+- [3. Longest Substring Without Repeating Characters (Medium)](https://leetcode.com/problems/longest-substring-without-repeating-characters/?tab=Description)
+
 ## 双指针
 - [167. Two Sum II - Input array is sorted (Easy)](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)
 - [633. Sum of Square Numbers (Easy)](https://leetcode.com/problems/sum-of-square-numbers/)
