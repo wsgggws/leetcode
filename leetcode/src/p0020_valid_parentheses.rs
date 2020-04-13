@@ -32,42 +32,48 @@
 
 pub struct Solution {}
 
-
 impl Solution {
     pub fn is_valid(s: String) -> bool {
         let mut stack = Vec::new();
-        for ch in s.chars(){
+        for ch in s.chars() {
             match ch {
                 '(' | '{' | '[' => stack.push(ch),
                 ')' => {
                     let c = stack.pop();
                     match c {
-                        Some('(') => {},
-                        _ => { return false; },
+                        Some('(') => {}
+                        _ => {
+                            return false;
+                        }
                     }
-                },
-                '}' => { 
+                }
+                '}' => {
                     let c = stack.pop();
                     match c {
-                        Some('{') => {},
-                        _ => { return false; }
+                        Some('{') => {}
+                        _ => {
+                            return false;
+                        }
                     }
-                },
-                ']' => { 
-                    let c = stack.pop(); 
+                }
+                ']' => {
+                    let c = stack.pop();
                     match c {
-                        Some('[') => {},
-                        _ => { return false; }
+                        Some('[') => {}
+                        _ => {
+                            return false;
+                        }
                     }
-                },
+                }
                 _ => panic!("it's no possible"),
             }
         }
-        if stack.len() > 0 { return false; }
+        if stack.len() > 0 {
+            return false;
+        }
         true
     }
 }
-
 
 #[cfg(test)]
 mod tests {

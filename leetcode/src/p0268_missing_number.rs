@@ -16,15 +16,15 @@
 
 pub struct Solution {}
 
-
 impl Solution {
     pub fn missing_number(nums: Vec<i32>) -> i32 {
         let len = nums.len() as i32;
-        if len == 0 { return 0; }
-        (len * (len+1))/2 - nums.into_iter().sum::<i32>()
+        if len == 0 {
+            return 0;
+        }
+        (len * (len + 1)) / 2 - nums.into_iter().sum::<i32>()
     }
 }
-
 
 #[cfg(test)]
 mod tests {

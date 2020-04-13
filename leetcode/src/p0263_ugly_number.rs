@@ -18,7 +18,7 @@
 // Example 3:
 
 // Input: 14
-// Output: false 
+// Output: false
 // Explanation: 14 is not ugly since it includes another prime factor 7.
 // Note:
 
@@ -27,21 +27,27 @@
 
 pub struct Solution {}
 
-
 impl Solution {
     pub fn is_ugly(num: i32) -> bool {
-        if num <= 0 { return false; }
+        if num <= 0 {
+            return false;
+        }
         let mut num = num;
         loop {
-            if num == 1 { return true; }
-            else if num % 2 == 0 { num /= 2; }
-            else if num % 3 == 0 { num /= 3; }
-            else if num % 5 == 0 { num /= 5; }
-            else { return false; }
+            if num == 1 {
+                return true;
+            } else if num % 2 == 0 {
+                num /= 2;
+            } else if num % 3 == 0 {
+                num /= 3;
+            } else if num % 5 == 0 {
+                num /= 5;
+            } else {
+                return false;
+            }
         }
     }
 }
-
 
 #[cfg(test)]
 mod tests {

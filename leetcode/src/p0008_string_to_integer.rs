@@ -34,7 +34,7 @@
 
 // Input: "words and 987"
 // Output: 0
-// Explanation: The first non-whitespace character is 'w', which is not a numerical 
+// Explanation: The first non-whitespace character is 'w', which is not a numerical
 //              digit or a +/- sign. Therefore no valid conversion could be performed.
 // Example 5:
 
@@ -45,48 +45,61 @@
 
 pub struct Solution {}
 
-
 impl Solution {
     pub fn my_atoi(str: String) -> i32 {
         let a_str: String = str.to_string();
         let a_str = a_str.trim();
-        if a_str.len() == 0 { return 0; }
+        if a_str.len() == 0 {
+            return 0;
+        }
         let mut flag = false;
         let mut result = String::new();
         for (index, c) in a_str.chars().enumerate() {
-            if index == 0 && c == '-' { flag = true; }
+            if index == 0 && c == '-' {
+                flag = true;
+            }
             // need jupge the plus
-            else if index == 0 && c == '+' { flag = false; }
-            else if '0' <= c && c <= '9' { 
+            else if index == 0 && c == '+' {
+                flag = false;
+            } else if '0' <= c && c <= '9' {
                 if '0' == c && result.len() == 0 {
                     // do nothing, if the all first char is '0'
-                }else { result.push(c); }
-            }
-            else {
+                } else {
+                    result.push(c);
+                }
+            } else {
                 break;
             }
         }
         // empty string
-        if result.len() == 0 { return 0; }
+        if result.len() == 0 {
+            return 0;
+        }
 
-        let int_min = (- 2_i64.pow(31)) as i32;
+        let int_min = (-2_i64.pow(31)) as i32;
         let int_max = (2_i64.pow(31) - 1) as i32;
         // string len > 10, int_min or int_max
         if result.len() >= 11 {
-            if flag { return int_min; }
-            else { return int_max }
+            if flag {
+                return int_min;
+            } else {
+                return int_max;
+            }
         }
 
         let a: i64 = result.parse().expect("error.");
-        if !flag && a >= 2_i64.pow(31) { return int_max; } 
-        if flag && a > 2_i64.pow(31) { return int_min; }
+        if !flag && a >= 2_i64.pow(31) {
+            return int_max;
+        }
+        if flag && a > 2_i64.pow(31) {
+            return int_min;
+        }
         if flag {
-            return (0_i64 - a) as i32 ;
+            return (0_i64 - a) as i32;
         }
         a as i32
     }
 }
-
 
 #[cfg(test)]
 mod tests {
@@ -108,7 +121,10 @@ mod tests {
         assert_eq!(Solution::my_atoi("2147483647".to_string()), 2147483647);
         assert_eq!(Solution::my_atoi("-2147483649".to_string()), -2147483648);
         assert_eq!(Solution::my_atoi("21474aaa".to_string()), 21474);
-        assert_eq!(Solution::my_atoi("  0000000000012345678".to_string()), 12345678);
+        assert_eq!(
+            Solution::my_atoi("  0000000000012345678".to_string()),
+            12345678
+        );
         assert_eq!(Solution::my_atoi("  1001".to_string()), 1001);
         assert_eq!(Solution::my_atoi("  -1001".to_string()), -1001);
     }

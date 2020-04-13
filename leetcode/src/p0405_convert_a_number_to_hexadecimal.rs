@@ -29,7 +29,9 @@ pub struct Solution {}
 use std::collections::HashMap;
 impl Solution {
     pub fn to_hex(num: i32) -> String {
-        if num == 0 { return "0".to_owned(); }
+        if num == 0 {
+            return "0".to_owned();
+        }
         let binary = format!("{:032b}", num);
 
         let mut map = HashMap::with_capacity(16);
@@ -53,7 +55,7 @@ impl Solution {
         let mut result = String::new();
         let mut i = 0;
         for _ in 0..8 {
-            if let Some(&ch) = map.get(&binary[i..i+4]) {
+            if let Some(&ch) = map.get(&binary[i..i + 4]) {
                 result.push(ch);
             }
             i += 4;
@@ -61,7 +63,6 @@ impl Solution {
         result.trim_start_matches('0').to_owned()
     }
 }
-
 
 #[cfg(test)]
 mod tests {

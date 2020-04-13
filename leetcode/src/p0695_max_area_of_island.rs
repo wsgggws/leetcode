@@ -34,7 +34,10 @@ impl Solution {
         let mut visit: Vec<Vec<bool>> = vec![vec![false; n as usize]; m as usize];
         for i in 0..m {
             for j in 0..n {
-                max_area = i32::max(max_area, Solution::dfs(&grid, &mut visit, i as i32, j as i32));
+                max_area = i32::max(
+                    max_area,
+                    Solution::dfs(&grid, &mut visit, i as i32, j as i32),
+                );
             }
         }
         max_area

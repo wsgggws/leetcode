@@ -19,7 +19,6 @@
 
 pub struct Solution {}
 
-
 use std::collections::HashMap;
 impl Solution {
     pub fn group_anagrams(strs: Vec<String>) -> Vec<Vec<String>> {
@@ -42,20 +41,18 @@ mod tests {
     // TODO 每次测试vec列表的输出顺序不一致, 还不知道如何测试这种情况
     fn group_anagrams_test() {
         assert_eq!(
-            Solution::group_anagrams(
-                vec![
-                    "eat".to_string(),
-                    "tea".to_string(),
-                    "tan".to_string(),
-                    "ate".to_string(),
-                    "nat".to_string(),
-                    "bat".to_string()
-                ]
-            ),
+            Solution::group_anagrams(vec![
+                "eat".to_string(),
+                "tea".to_string(),
+                "tan".to_string(),
+                "ate".to_string(),
+                "nat".to_string(),
+                "bat".to_string()
+            ]),
             vec![
                 vec!["tan".to_string(), "nat".to_string()],
                 vec!["bat".to_string()],
-                vec!["eat".to_string(),"ate".to_string(),"tea".to_string()]
+                vec!["eat".to_string(), "ate".to_string(), "tea".to_string()]
             ]
         );
     }

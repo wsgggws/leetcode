@@ -21,23 +21,21 @@
 
 pub struct Solution {}
 
-
 impl Solution {
     pub fn max_profit(prices: Vec<i32>) -> i32 {
         let mut current = 0;
         let mut result = 0;
         for i in 1..prices.len() {
-            current = current + prices[i] - prices[i-1];
+            current = current + prices[i] - prices[i - 1];
             if current <= 0 {
                 current = 0;
-            }else{
+            } else {
                 result = i32::max(result, current);
             }
         }
         result
     }
 }
-
 
 #[cfg(test)]
 mod tests {

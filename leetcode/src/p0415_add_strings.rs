@@ -12,7 +12,6 @@
 
 pub struct Solution {}
 
-
 use std::char::from_digit;
 impl Solution {
     pub fn add_strings(num1: String, num2: String) -> String {
@@ -24,11 +23,12 @@ impl Solution {
 
         while !(part_one.is_empty() && part_two.is_empty()) {
             let mut sum = part_one.pop().map_or(0, |ch| ch.to_digit(10).unwrap())
-                + part_two.pop().map_or(0, |ch| ch.to_digit(10).unwrap()) + tag;
+                + part_two.pop().map_or(0, |ch| ch.to_digit(10).unwrap())
+                + tag;
             if sum > 9 {
                 sum -= 10;
                 tag = 1;
-            }else {
+            } else {
                 tag = 0;
             }
             result.insert(0, from_digit(sum, 10).unwrap());
@@ -40,15 +40,23 @@ impl Solution {
     }
 }
 
-
 #[cfg(test)]
 mod tests {
     use super::*;
 
     #[test]
     fn add_strings_test() {
-        assert_eq!(Solution::add_strings("0".to_owned(), "0".to_owned()), "0".to_owned());
-        assert_eq!(Solution::add_strings("123".to_owned(), "123".to_owned()), "246".to_owned());
-        assert_eq!(Solution::add_strings("123".to_owned(), "999".to_owned()), "1122".to_owned());
+        assert_eq!(
+            Solution::add_strings("0".to_owned(), "0".to_owned()),
+            "0".to_owned()
+        );
+        assert_eq!(
+            Solution::add_strings("123".to_owned(), "123".to_owned()),
+            "246".to_owned()
+        );
+        assert_eq!(
+            Solution::add_strings("123".to_owned(), "999".to_owned()),
+            "1122".to_owned()
+        );
     }
 }

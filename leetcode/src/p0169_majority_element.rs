@@ -16,21 +16,24 @@
 
 pub struct Solution {}
 
-
 impl Solution {
     pub fn majority_element(nums: Vec<i32>) -> i32 {
         let mut majority = nums[0];
         let mut count = 1;
-        for num in &nums[1..]{
-            if count == 0 { majority = *num; }
+        for num in &nums[1..] {
+            if count == 0 {
+                majority = *num;
+            }
 
-            if majority == *num { count += 1; }
-            else { count -= 1; }
+            if majority == *num {
+                count += 1;
+            } else {
+                count -= 1;
+            }
         }
         majority
     }
 }
-
 
 #[cfg(test)]
 mod tests {

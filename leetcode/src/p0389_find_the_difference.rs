@@ -21,7 +21,6 @@
 
 pub struct Solution {}
 
-
 impl Solution {
     pub fn find_the_difference(s: String, t: String) -> char {
         let mut chars_s: Vec<char> = s.chars().collect();
@@ -29,12 +28,13 @@ impl Solution {
         let mut chars_t: Vec<char> = t.chars().collect();
         chars_t.sort_by(|a, b| b.cmp(a));
         for (index, ch) in chars_s.iter().enumerate() {
-            if *ch != chars_t[index] { return chars_t[index]; }
+            if *ch != chars_t[index] {
+                return chars_t[index];
+            }
         }
         chars_t[chars_t.len() - 1_usize]
     }
 }
-
 
 #[cfg(test)]
 mod tests {
@@ -42,9 +42,21 @@ mod tests {
 
     #[test]
     fn find_the_difference_test() {
-        assert_eq!(Solution::find_the_difference("abcd".to_string(), "abcde".to_string()), 'e');
-        assert_eq!(Solution::find_the_difference("abcd".to_string(), "abecd".to_string()), 'e');
-        assert_eq!(Solution::find_the_difference("aacd".to_string(), "abacd".to_string()), 'b');
-        assert_eq!(Solution::find_the_difference("aacd".to_string(), "cdaba".to_string()), 'b');
+        assert_eq!(
+            Solution::find_the_difference("abcd".to_string(), "abcde".to_string()),
+            'e'
+        );
+        assert_eq!(
+            Solution::find_the_difference("abcd".to_string(), "abecd".to_string()),
+            'e'
+        );
+        assert_eq!(
+            Solution::find_the_difference("aacd".to_string(), "abacd".to_string()),
+            'b'
+        );
+        assert_eq!(
+            Solution::find_the_difference("aacd".to_string(), "cdaba".to_string()),
+            'b'
+        );
     }
 }

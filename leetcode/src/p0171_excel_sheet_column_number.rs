@@ -11,7 +11,7 @@
 //     ...
 //     Z -> 26
 //     AA -> 27
-//     AB -> 28 
+//     AB -> 28
 //     ...
 // Example 1:
 
@@ -28,7 +28,6 @@
 
 pub struct Solution {}
 
-
 impl Solution {
     pub fn title_to_number(s: String) -> i32 {
         let chars: Vec<char> = s.chars().rev().collect();
@@ -42,7 +41,6 @@ impl Solution {
     }
 }
 
-
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -54,4 +52,3 @@ mod tests {
         assert_eq!(Solution::title_to_number("AB".to_string()), 28);
     }
 }
-

@@ -7,7 +7,6 @@
 
 // How many possible unique paths are there?
 
-
 // Above is a 7 x 3 grid. How many possible unique paths are there?
 
 // Note: m and n will be at most 100.
@@ -37,7 +36,7 @@ impl Solution {
         let mut result = 1_i64;
         // 结果为组合数C(m+n-2, m-1)
         for i in 1..=down_steps {
-            result = result * ( total_steps - down_steps + i ) / i;
+            result = result * (total_steps - down_steps + i) / i;
         }
         result as i32
     }
@@ -52,6 +51,5 @@ mod tests {
         assert_eq!(Solution::unique_paths(3, 2), 3);
         assert_eq!(Solution::unique_paths(7, 3), 28);
         assert_eq!(Solution::unique_paths(23, 12), 193536720);
-
     }
 }

@@ -24,7 +24,7 @@ impl Solution {
             result[index] *= left;
         }
         let mut right = 1;
-        for index in (0..=n-2).rev() {
+        for index in (0..=n - 2).rev() {
             right *= nums[index + 1];
             result[index] *= right;
         }
@@ -38,7 +38,13 @@ mod tests {
 
     #[test]
     fn product_except_self_test() {
-        assert_eq!(Solution::product_except_self(vec![1, 2, 3, 4]), vec![24, 12, 8, 6]);
-        assert_eq!(Solution::product_except_self(vec![1, 2, 3, 4, 5]), vec![120, 60, 40, 30, 24]);
+        assert_eq!(
+            Solution::product_except_self(vec![1, 2, 3, 4]),
+            vec![24, 12, 8, 6]
+        );
+        assert_eq!(
+            Solution::product_except_self(vec![1, 2, 3, 4, 5]),
+            vec![120, 60, 40, 30, 24]
+        );
     }
 }

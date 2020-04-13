@@ -23,7 +23,6 @@
 
 pub struct Solution {}
 
-
 impl Solution {
     pub fn my_pow(x: f64, n: i32) -> f64 {
         // 直接调用内置的库, 能够快速通过.
@@ -43,7 +42,6 @@ impl Solution {
         //     result *= x;
         // }
         // result
-
 
         // // 手动实现二分法快速幕, 能通过
         // if n == 0 { return 1.0; }

@@ -21,7 +21,6 @@
 
 pub struct Solution {}
 
-
 impl Solution {
     pub fn str_str(haystack: String, needle: String) -> i32 {
         // 自己实现, 能通过
@@ -39,11 +38,12 @@ impl Solution {
         // -1_i32
 
         // 使用内置的函数库, 速度一致, 内存一致
-        if needle.is_empty() { return 0; }
+        if needle.is_empty() {
+            return 0;
+        }
         haystack.find(&needle).map_or(-1_i32, |v| v as i32)
     }
 }
-
 
 #[cfg(test)]
 mod tests {
@@ -52,9 +52,15 @@ mod tests {
     #[test]
     fn str_str_test() {
         assert_eq!(Solution::str_str("hello".to_string(), "".to_string()), 0);
-        assert_eq!(Solution::str_str("hello".to_string(), "llohel".to_string()), -1);
+        assert_eq!(
+            Solution::str_str("hello".to_string(), "llohel".to_string()),
+            -1
+        );
         assert_eq!(Solution::str_str("hello".to_string(), "ll".to_string()), 2);
         assert_eq!(Solution::str_str("hello".to_string(), "lo".to_string()), 3);
-        assert_eq!(Solution::str_str("aaaaa".to_string(), "bba".to_string()), -1);
+        assert_eq!(
+            Solution::str_str("aaaaa".to_string(), "bba".to_string()),
+            -1
+        );
     }
 }

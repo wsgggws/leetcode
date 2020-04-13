@@ -9,11 +9,9 @@
 
 // After you are done modifying the input array in-place, return the new length of the array.
 
- 
 // Follow up:
 // Could you solve it using only O(1) extra space?
 
- 
 // Example 1:
 
 // Input:
@@ -24,7 +22,6 @@
 
 // Explanation:
 // "aa" is replaced by "a2". "bb" is replaced by "b2". "ccc" is replaced by "c3".
- 
 
 // Example 2:
 
@@ -36,7 +33,6 @@
 
 // Explanation:
 // Nothing is replaced.
- 
 
 // Example 3:
 
@@ -49,7 +45,6 @@
 // Explanation:
 // Since the character "a" does not repeat, it is not compressed. "bbbbbbbbbbbb" is replaced by "b12".
 // Notice each digit has it's own entry in the array.
- 
 
 // Note:
 
@@ -58,7 +53,6 @@
 
 pub struct Solution {}
 
-
 impl Solution {
     pub fn compress(chars: &mut Vec<char>) -> i32 {
         let mut first_char: char = chars[0];
@@ -66,8 +60,9 @@ impl Solution {
         let lens = chars.len();
         for _ in 0..lens {
             let temp: char = chars.remove(0);
-            if first_char == temp { part_len += 1; }
-            else {
+            if first_char == temp {
+                part_len += 1;
+            } else {
                 chars.push(first_char);
                 if part_len > 1 {
                     chars.extend(part_len.to_string().chars());
@@ -84,7 +79,6 @@ impl Solution {
     }
 }
 
-
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -99,7 +93,9 @@ mod tests {
         assert_eq!(Solution::compress(&mut test_vec), 1);
         assert_eq!(test_vec, vec!['a']);
 
-        let mut test_vec = vec!['a','b','b','b','b','b','b','b','b','b','b','b','b'];
+        let mut test_vec = vec![
+            'a', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b',
+        ];
         assert_eq!(Solution::compress(&mut test_vec), 4);
         assert_eq!(test_vec, vec!['a', 'b', '1', '2']);
     }

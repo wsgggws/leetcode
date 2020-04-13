@@ -65,7 +65,7 @@ mod tests {
         assert_eq!(Solution::remove_duplicates(&mut test_vec), 2);
         assert_eq!(test_vec, vec![1, 2, 2]);
 
-        let mut test_vec = vec![0,0,1,1,1,2,2,3,3,4];
+        let mut test_vec = vec![0, 0, 1, 1, 1, 2, 2, 3, 3, 4];
         assert_eq!(Solution::remove_duplicates(&mut test_vec), 5);
         assert_eq!(test_vec, vec![0, 1, 2, 3, 4, 2, 2, 3, 3, 4]);
     }

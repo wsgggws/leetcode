@@ -58,9 +58,18 @@ mod tests {
     fn longest_palindrome_test() {
         assert_eq!(Solution::longest_palindrome("".to_owned()), "".to_owned());
         assert_eq!(Solution::longest_palindrome("a".to_owned()), "a".to_owned());
-        assert_eq!(Solution::longest_palindrome("abcdef".to_owned()), "a".to_owned());
-        assert_eq!(Solution::longest_palindrome("babad".to_owned()), "bab".to_owned());
-        assert_eq!(Solution::longest_palindrome("cbbd".to_owned()), "bb".to_owned());
+        assert_eq!(
+            Solution::longest_palindrome("abcdef".to_owned()),
+            "a".to_owned()
+        );
+        assert_eq!(
+            Solution::longest_palindrome("babad".to_owned()),
+            "bab".to_owned()
+        );
+        assert_eq!(
+            Solution::longest_palindrome("cbbd".to_owned()),
+            "bb".to_owned()
+        );
         assert_eq!(Solution::longest_palindrome("nypdmqqgauepeyfvwcdpbmmaxfwxmmtswfuwldtvqcisywalfnvovuordczxlyzqmslxilpnenbuwbcpebneovitwkkswsijajnkwkfbxnulmwotgrmpklntfyjavccbrgwqynryeoswmhsqzcwnudkuvfkikjxjkjpghsytjfkpvkjpvblamdeegeohospporbtorkbuggbawgodhxpscfksjbirxvjyjapwwushmnqsxktnslvonlwvuseinrmwvfqjgzpkwcqfzfdbbmcngmsoeegudwjvldqmaomwbqvijesnpxiqvtfeiqebrfjhtvjdwkopyfzaslewdjnkmalvfinbuouwcgnfecjtdzwycxrynxepbcsroyzrsgiiuaszvatwyuxinwhni".to_owned()), "kjxjk".to_owned());
-}
+    }
 }

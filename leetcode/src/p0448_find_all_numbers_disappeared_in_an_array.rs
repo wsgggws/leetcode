@@ -17,7 +17,6 @@
 
 pub struct Solution {}
 
-
 impl Solution {
     pub fn find_disappeared_numbers(nums: Vec<i32>) -> Vec<i32> {
         let mut nums = nums;
@@ -27,13 +26,13 @@ impl Solution {
         }
         let mut result = Vec::new();
         for i in 0..nums.len() {
-            if nums[i] > 0 { result.push((i+1_usize) as i32); }
+            if nums[i] > 0 {
+                result.push((i + 1_usize) as i32);
+            }
         }
         result
     }
 }
-
-
 
 #[cfg(test)]
 mod tests {
@@ -41,6 +40,9 @@ mod tests {
 
     #[test]
     fn find_disappeared_numbers_test() {
-        assert_eq!(Solution::find_disappeared_numbers(vec![4, 3, 2, 7, 8, 2, 3, 1]), vec![5, 6]);
+        assert_eq!(
+            Solution::find_disappeared_numbers(vec![4, 3, 2, 7, 8, 2, 3, 1]),
+            vec![5, 6]
+        );
     }
 }

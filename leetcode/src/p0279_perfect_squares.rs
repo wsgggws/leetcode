@@ -6,7 +6,7 @@
 // Example 1:
 
 // Input: n = 12
-// Output: 3 
+// Output: 3
 // Explanation: 12 = 4 + 4 + 4.
 // Example 2:
 
@@ -24,9 +24,9 @@ impl Solution {
             let mut mins = i32::max_value();
             for &square in squares.iter() {
                 if square > i {
-                    break
+                    break;
                 }
-                mins = i32::min(mins, dp[(i-square) as usize] + 1);
+                mins = i32::min(mins, dp[(i - square) as usize] + 1);
             }
             dp[i as usize] = mins
         }

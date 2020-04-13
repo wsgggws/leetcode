@@ -7,13 +7,11 @@
 
 // Input: [1,2,3]
 // Output: 6
- 
 
 // Example 2:
 
 // Input: [1,2,3,4]
 // Output: 24
- 
 
 // Note:
 
@@ -51,7 +49,7 @@ impl Solution {
             }
         }
 
-        i32::max(max1*max2*max3, max1*min1*min2)
+        i32::max(max1 * max2 * max3, max1 * min1 * min2)
     }
 }
 

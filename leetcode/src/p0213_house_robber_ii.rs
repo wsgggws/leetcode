@@ -29,8 +29,8 @@ impl Solution {
             return nums[0];
         } else {
             return i32::max(
-                Solution::rob_198(nums[0..n-1].to_vec()),
-                Solution::rob_198(nums[1..n].to_vec())
+                Solution::rob_198(nums[0..n - 1].to_vec()),
+                Solution::rob_198(nums[1..n].to_vec()),
             );
         }
     }
@@ -55,6 +55,6 @@ mod tests {
         assert_eq!(Solution::rob(vec![2, 3, 2]), 3);
         assert_eq!(Solution::rob(vec![2, 3, 2, 3]), 6);
         assert_eq!(Solution::rob(vec![2, 3, 2, 3, 5]), 8);
-        assert_eq!(Solution::rob(vec![1,2,3,1]), 4);
+        assert_eq!(Solution::rob(vec![1, 2, 3, 1]), 4);
     }
 }

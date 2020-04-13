@@ -7,8 +7,6 @@
 
 // You may assume all the characters consist of printable ascii characters.
 
- 
-
 // Example 1:
 
 // Input: ["h","e","l","l","o"]
@@ -20,13 +18,11 @@
 
 pub struct Solution {}
 
-
 impl Solution {
     pub fn reverse_string(s: &mut Vec<char>) {
         s.reverse()
     }
 }
-
 
 #[cfg(test)]
 mod tests {
@@ -34,8 +30,8 @@ mod tests {
 
     #[test]
     fn reverse_string_test() {
-        let mut arr: Vec<char> = vec!['h','e','l','l','o'];
+        let mut arr: Vec<char> = vec!['h', 'e', 'l', 'l', 'o'];
         Solution::reverse_string(&mut arr);
-        assert_eq!(arr, vec!['o','l','l','e','h']);
+        assert_eq!(arr, vec!['o', 'l', 'l', 'e', 'h']);
     }
 }

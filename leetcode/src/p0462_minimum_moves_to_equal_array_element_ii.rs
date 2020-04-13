@@ -22,7 +22,9 @@ pub struct Solution {}
 
 impl Solution {
     pub fn min_moves2(nums: Vec<i32>) -> i32 {
-        if nums.len() <= 1usize { return 0; }
+        if nums.len() <= 1usize {
+            return 0;
+        }
         let mut nums = nums;
         nums.sort();
         let (mut i, mut j) = (0usize, nums.len() - 1usize);

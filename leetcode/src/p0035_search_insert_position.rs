@@ -24,25 +24,31 @@
 
 pub struct Solution {}
 
-
 impl Solution {
     pub fn search_insert(nums: Vec<i32>, target: i32) -> i32 {
-        if target <= nums[0] { return 0 as i32; }
+        if target <= nums[0] {
+            return 0 as i32;
+        }
         let len = nums.len();
-        if target > nums[len-1] { return len as i32; }
+        if target > nums[len - 1] {
+            return len as i32;
+        }
         let mut start = 0;
         let mut end = len - 1;
         // 使用二分法进行查找
         while start < end {
             let mid = (start + end) / 2;
-            if nums[mid] < target && target <= nums[mid+1] { return (mid+1) as i32; }
-            else if target <= nums[mid] { end = mid; }
-            else if target > nums[mid+1] { start = mid; }
+            if nums[mid] < target && target <= nums[mid + 1] {
+                return (mid + 1) as i32;
+            } else if target <= nums[mid] {
+                end = mid;
+            } else if target > nums[mid + 1] {
+                start = mid;
+            }
         }
         start as i32
     }
 }
-
 
 #[cfg(test)]
 mod tests {

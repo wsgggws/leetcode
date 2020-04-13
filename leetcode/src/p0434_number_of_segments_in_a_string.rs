@@ -12,14 +12,12 @@
 
 pub struct Solution {}
 
-
 impl Solution {
     pub fn count_segments(s: String) -> i32 {
         let v: Vec<&str> = s.trim().split_whitespace().collect();
         v.len() as i32
     }
 }
-
 
 #[cfg(test)]
 mod tests {
@@ -30,8 +28,13 @@ mod tests {
         assert_eq!(Solution::count_segments("".to_owned()), 0);
         assert_eq!(Solution::count_segments("    ".to_owned()), 0);
         assert_eq!(Solution::count_segments("   abc d ".to_owned()), 2);
-        assert_eq!(Solution::count_segments("Hello, my name is John".to_owned()), 5);
-        assert_eq!(Solution::count_segments(", , , ,        a, eaefa".to_owned()), 6);
-
+        assert_eq!(
+            Solution::count_segments("Hello, my name is John".to_owned()),
+            5
+        );
+        assert_eq!(
+            Solution::count_segments(", , , ,        a, eaefa".to_owned()),
+            6
+        );
     }
 }

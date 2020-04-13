@@ -11,7 +11,7 @@
 //     ...
 //     26 -> Z
 //     27 -> AA
-//     28 -> AB 
+//     28 -> AB
 //     ...
 // Example 1:
 
@@ -28,7 +28,6 @@
 
 pub struct Solution {}
 
-
 impl Solution {
     pub fn convert_to_title(n: i32) -> String {
         let base = 26;
@@ -37,14 +36,16 @@ impl Solution {
         while n > 0 {
             let mut code = (n % base) as u8;
             n = n / base;
-            if code == 0 { n -= 1; code = base as u8; };
+            if code == 0 {
+                n -= 1;
+                code = base as u8;
+            };
             let ch = (('A' as u8) + (code - 1_u8)) as char;
             result.insert(0, ch);
         }
         result
     }
 }
-
 
 #[cfg(test)]
 mod tests {

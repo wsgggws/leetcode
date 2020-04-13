@@ -16,7 +16,6 @@
 
 pub struct Solution {}
 
-
 impl Solution {
     pub fn is_perfect_square(num: i32) -> bool {
         // 使用暴力法
@@ -30,19 +29,24 @@ impl Solution {
         // false
 
         // 使用二分法
-        if num == 1 || num == 0 { return true; }
+        if num == 1 || num == 0 {
+            return true;
+        }
         let mut start: i64 = 0;
-        let mut end: i64 = (num as i64)/2;
+        let mut end: i64 = (num as i64) / 2;
         while start <= end {
-            let mid = (start + end)/2;
-            if mid * mid == num as i64 { return true; }
-            else if mid * mid < num as i64 { start = mid + 1; }
-            else { end = mid - 1; }
+            let mid = (start + end) / 2;
+            if mid * mid == num as i64 {
+                return true;
+            } else if mid * mid < num as i64 {
+                start = mid + 1;
+            } else {
+                end = mid - 1;
+            }
         }
         false
     }
 }
-
 
 #[cfg(test)]
 mod tests {

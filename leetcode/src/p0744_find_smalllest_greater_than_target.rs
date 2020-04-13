@@ -44,7 +44,7 @@ pub struct Solution {}
 
 impl Solution {
     pub fn next_greatest_letter(letters: Vec<char>, target: char) -> char {
-        let (mut left, mut right) = (0, letters.len() as i32 -1);
+        let (mut left, mut right) = (0, letters.len() as i32 - 1);
         while left <= right {
             let mid = left + (right - left) / 2;
             if letters[mid as usize] <= target {
@@ -53,7 +53,11 @@ impl Solution {
                 right -= 1;
             }
         }
-        if left >= letters.len() as i32 { letters[0_usize] } else { letters[left as usize] }
+        if left >= letters.len() as i32 {
+            letters[0_usize]
+        } else {
+            letters[left as usize]
+        }
     }
 }
 
@@ -64,10 +68,25 @@ mod tests {
     #[test]
     fn next_greatest_letter_test() {
         assert_eq!(Solution::next_greatest_letter(vec!['a', 'b'], 'z'), 'a');
-        assert_eq!(Solution::next_greatest_letter(vec!['c', 'f', 'j'], 'a'), 'c');
-        assert_eq!(Solution::next_greatest_letter(vec!['c', 'f', 'j'], 'c'), 'f');
-        assert_eq!(Solution::next_greatest_letter(vec!['c', 'f', 'j'], 'd'), 'f');
-        assert_eq!(Solution::next_greatest_letter(vec!['c', 'f', 'j'], 'g'), 'j');
-        assert_eq!(Solution::next_greatest_letter(vec!['c', 'f', 'j'], 'j'), 'c');
+        assert_eq!(
+            Solution::next_greatest_letter(vec!['c', 'f', 'j'], 'a'),
+            'c'
+        );
+        assert_eq!(
+            Solution::next_greatest_letter(vec!['c', 'f', 'j'], 'c'),
+            'f'
+        );
+        assert_eq!(
+            Solution::next_greatest_letter(vec!['c', 'f', 'j'], 'd'),
+            'f'
+        );
+        assert_eq!(
+            Solution::next_greatest_letter(vec!['c', 'f', 'j'], 'g'),
+            'j'
+        );
+        assert_eq!(
+            Solution::next_greatest_letter(vec!['c', 'f', 'j'], 'j'),
+            'c'
+        );
     }
 }

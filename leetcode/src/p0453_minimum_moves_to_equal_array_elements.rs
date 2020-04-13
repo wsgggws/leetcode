@@ -18,7 +18,6 @@
 
 pub struct Solution {}
 
-
 // 每次对 n-1 个数进行 加1 <==> 对1个最大的数 减1
 // i.e.
 // 1, 2, 3 => 2, 3, 3 => 3, 4, 3 => 4, 4, 4
@@ -35,7 +34,6 @@ impl Solution {
         (sum - len * min_value) as i32
     }
 }
-
 
 #[cfg(test)]
 mod tests {

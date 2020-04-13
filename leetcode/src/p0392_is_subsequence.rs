@@ -25,7 +25,6 @@
 
 pub struct Solution {}
 
-
 impl Solution {
     pub fn is_subsequence(s: String, t: String) -> bool {
         let chars_s: Vec<char> = s.chars().collect();
@@ -33,13 +32,18 @@ impl Solution {
         let mut index_i = 0_usize;
         let mut index_j = 0_usize;
         while index_j < chars_t.len() && index_i < chars_s.len() {
-            if chars_t[index_j] == chars_s[index_i] { index_i += 1; }
+            if chars_t[index_j] == chars_s[index_i] {
+                index_i += 1;
+            }
             index_j += 1_usize;
         }
-        if index_i == chars_s.len() { true } else { false }
+        if index_i == chars_s.len() {
+            true
+        } else {
+            false
+        }
     }
 }
-
 
 #[cfg(test)]
 mod tests {
@@ -47,7 +51,13 @@ mod tests {
 
     #[test]
     fn is_subsequence_test() {
-        assert_eq!(Solution::is_subsequence("abc".to_owned(), "ahbgdc".to_owned()), true);
-        assert_eq!(Solution::is_subsequence("axe".to_owned(), "ahbgdc".to_owned()), false);
+        assert_eq!(
+            Solution::is_subsequence("abc".to_owned(), "ahbgdc".to_owned()),
+            true
+        );
+        assert_eq!(
+            Solution::is_subsequence("axe".to_owned(), "ahbgdc".to_owned()),
+            false
+        );
     }
 }

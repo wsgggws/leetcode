@@ -18,7 +18,6 @@
 
 pub struct Solution {}
 
-
 use std::collections::HashMap;
 // use std::collections::HashSet;
 impl Solution {
@@ -31,8 +30,10 @@ impl Solution {
                         return true;
                     }
                     map.insert(num, index);
-                },
-                None => { map.insert(num, index); },
+                }
+                None => {
+                    map.insert(num, index);
+                }
             }
         }
         false
@@ -48,7 +49,6 @@ impl Solution {
     }
 }
 
-
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -59,8 +59,17 @@ mod tests {
         assert_eq!(Solution::contains_nearby_duplicate(vec![1, 1, 1], 0), false);
         assert_eq!(Solution::contains_nearby_duplicate(vec![1], 5), false);
         assert_eq!(Solution::contains_nearby_duplicate(vec![1, 2], 1), false);
-        assert_eq!(Solution::contains_nearby_duplicate(vec![1, 2, 3, 4], 5), false);
-        assert_eq!(Solution::contains_nearby_duplicate(vec![1, 1, 3, 4], 1), true);
-        assert_eq!(Solution::contains_nearby_duplicate(vec![1, 2, 3, 1, 2, 3], 2), false);
+        assert_eq!(
+            Solution::contains_nearby_duplicate(vec![1, 2, 3, 4], 5),
+            false
+        );
+        assert_eq!(
+            Solution::contains_nearby_duplicate(vec![1, 1, 3, 4], 1),
+            true
+        );
+        assert_eq!(
+            Solution::contains_nearby_duplicate(vec![1, 2, 3, 1, 2, 3], 2),
+            false
+        );
     }
 }

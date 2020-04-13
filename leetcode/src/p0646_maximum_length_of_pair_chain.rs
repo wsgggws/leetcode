@@ -47,19 +47,13 @@ mod tests {
     #[test]
     fn find_longest_chain_test() {
         assert_eq!(Solution::find_longest_chain(vec![]), 0);
-        assert_eq!(Solution::find_longest_chain(vec![vec![1,2]]), 1);
+        assert_eq!(Solution::find_longest_chain(vec![vec![1, 2]]), 1);
         assert_eq!(
-            Solution::find_longest_chain(vec![
-                vec![2,3],
-                vec![1,2],
-                vec![3,4]]),
+            Solution::find_longest_chain(vec![vec![2, 3], vec![1, 2], vec![3, 4]]),
             2
         );
         assert_eq!(
-            Solution::find_longest_chain(vec![
-                vec![1,2],
-                vec![2,3],
-                vec![3,4]]),
+            Solution::find_longest_chain(vec![vec![1, 2], vec![2, 3], vec![3, 4]]),
             2
         );
     }

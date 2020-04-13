@@ -6,7 +6,7 @@
 // Example 1:
 
 // Input: 1
-// Output: true 
+// Output: true
 // Explanation: 20 = 1
 // Example 2:
 
@@ -20,20 +20,24 @@
 
 pub struct Solution {}
 
-
 impl Solution {
     pub fn is_power_of_two(n: i32) -> bool {
-        if n <= 0 { return false; }
+        if n <= 0 {
+            return false;
+        }
         let mut n = n;
         while n > 0 {
-            if n == 1 { return true; }
-            if n % 2 == 1 { return false; }
+            if n == 1 {
+                return true;
+            }
+            if n % 2 == 1 {
+                return false;
+            }
             n /= 2;
         }
         true
     }
 }
-
 
 #[cfg(test)]
 mod tests {

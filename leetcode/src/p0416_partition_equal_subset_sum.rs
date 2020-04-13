@@ -7,7 +7,6 @@
 
 // Each of the array element will not exceed 100.
 // The array size will not exceed 200.
- 
 
 // Example 1:
 
@@ -16,7 +15,6 @@
 // Output: true
 
 // Explanation: The array can be partitioned as [1, 5, 5] and [11].
- 
 
 // Example 2:
 

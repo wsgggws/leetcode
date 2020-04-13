@@ -14,7 +14,6 @@
 
 pub struct Solution {}
 
-
 use std::collections::HashMap;
 impl Solution {
     pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
@@ -33,15 +32,16 @@ impl Solution {
         let mut map = HashMap::new();
         for (index, num) in nums.iter().enumerate() {
             // 这里必须得使用&符号, other_index也必须使用*号
-            match map.get(&(target-num)) {
-                None => { map.insert(num, index); },
-                Some(other_index) => { return vec![*other_index as i32, index as i32] },
+            match map.get(&(target - num)) {
+                None => {
+                    map.insert(num, index);
+                }
+                Some(other_index) => return vec![*other_index as i32, index as i32],
             }
         }
         vec![]
     }
 }
-
 
 #[cfg(test)]
 mod tests {

@@ -65,7 +65,7 @@ impl Solution {
             while size > 0 {
                 let (cur_x, cur_y) = match queue.pop_front() {
                     Some((cur_x, cur_y)) => (cur_x, cur_y),
-                    None => (0, 0)
+                    None => (0, 0),
                 };
                 for i in 0..8 {
                     let next_x = cur_x + direction[i][0];

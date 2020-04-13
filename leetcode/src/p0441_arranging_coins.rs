@@ -31,23 +31,28 @@
 
 pub struct Solution {}
 
-
 impl Solution {
     pub fn arrange_coins(n: i32) -> i32 {
-        if n == 0 || n == 1 { return n; }
+        if n == 0 || n == 1 {
+            return n;
+        }
         let mut start = 0_i64;
         let mut end = n as i64;
         while start <= end {
             let mid: i64 = (start + end) / 2_i64;
-            if mid * (mid+1) > n as i64 * 2 { end = mid - 1_i64; }
-            else if mid * (mid+1) == n as i64 * 2 { return mid as i32; }
-            else if mid * (mid+1) < n as i64 * 2 && n as i64 *2 <= (mid-1) * mid { return (mid-1) as i32; }
-            else { start = mid + 1_i64; }
+            if mid * (mid + 1) > n as i64 * 2 {
+                end = mid - 1_i64;
+            } else if mid * (mid + 1) == n as i64 * 2 {
+                return mid as i32;
+            } else if mid * (mid + 1) < n as i64 * 2 && n as i64 * 2 <= (mid - 1) * mid {
+                return (mid - 1) as i32;
+            } else {
+                start = mid + 1_i64;
+            }
         }
         end as i32
     }
 }
-
 
 #[cfg(test)]
 mod tests {

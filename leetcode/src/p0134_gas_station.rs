@@ -14,7 +14,7 @@
 // Each element in the input arrays is a non-negative integer.
 // Example 1:
 
-// Input: 
+// Input:
 // gas  = [1,2,3,4,5]
 // cost = [3,4,5,1,2]
 
@@ -30,7 +30,7 @@
 // Therefore, return 3 as the starting index.
 // Example 2:
 
-// Input: 
+// Input:
 // gas  = [2,3,4]
 // cost = [3,4,3]
 
@@ -46,7 +46,6 @@
 
 pub struct Solution {}
 
-
 impl Solution {
     pub fn can_complete_circuit(gas: Vec<i32>, cost: Vec<i32>) -> i32 {
         let mut cur_min_value = i32::max_value();
@@ -60,10 +59,13 @@ impl Solution {
                 index = ((i + 1) % lens) as i32;
             }
         }
-        if total_gas >= 0 { index } else { -1 }
+        if total_gas >= 0 {
+            index
+        } else {
+            -1
+        }
     }
 }
-
 
 #[cfg(test)]
 mod tests {
@@ -71,7 +73,13 @@ mod tests {
 
     #[test]
     fn can_complete_circuit_test() {
-        assert_eq!(Solution::can_complete_circuit(vec![1, 2, 3, 4, 5], vec![3, 4, 5, 1, 2]), 3);
-        assert_eq!(Solution::can_complete_circuit(vec![2, 3, 4], vec![3, 4, 3]), -1);
+        assert_eq!(
+            Solution::can_complete_circuit(vec![1, 2, 3, 4, 5], vec![3, 4, 5, 1, 2]),
+            3
+        );
+        assert_eq!(
+            Solution::can_complete_circuit(vec![2, 3, 4], vec![3, 4, 3]),
+            -1
+        );
     }
 }

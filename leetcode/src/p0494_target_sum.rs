@@ -6,9 +6,9 @@
 // Find out how many ways to assign symbols to make sum of integers equal to target S.
 
 // Example 1:
-// Input: nums is [1, 1, 1, 1, 1], S is 3. 
+// Input: nums is [1, 1, 1, 1, 1], S is 3.
 // Output: 5
-// Explanation: 
+// Explanation:
 
 // -1+1+1+1+1 = 3
 // +1-1+1+1+1 = 3
@@ -27,7 +27,7 @@ pub struct Solution {}
 impl Solution {
     pub fn find_target_sum_ways(nums: Vec<i32>, s: i32) -> i32 {
         let sum = nums.iter().sum::<i32>();
-        if sum < s || (sum+s) % 2 != 0 {
+        if sum < s || (sum + s) % 2 != 0 {
             return 0;
         }
         let w = (sum + s) / 2;

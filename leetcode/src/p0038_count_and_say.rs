@@ -16,7 +16,6 @@
 
 // Note: Each term of the sequence of integers will be represented as a string.
 
-
 // Example 1:
 
 // Input: 1
@@ -28,12 +27,11 @@
 
 pub struct Solution {}
 
-
 use std::char::from_digit;
 impl Solution {
     pub fn count_and_say(n: i32) -> String {
         let mut result = vec!['1'];
-        for _ in 0..n-1 {
+        for _ in 0..n - 1 {
             let mut part = Vec::new();
             let mut i = 0_usize;
             while i < result.len() {
@@ -51,7 +49,6 @@ impl Solution {
         result.iter().collect()
     }
 }
-
 
 #[cfg(test)]
 mod tests {

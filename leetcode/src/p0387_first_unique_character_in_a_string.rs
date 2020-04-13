@@ -14,7 +14,6 @@
 
 pub struct Solution {}
 
-
 use std::collections::HashMap;
 impl Solution {
     pub fn first_uniq_char(s: String) -> i32 {
@@ -25,12 +24,13 @@ impl Solution {
             *counter += 1;
         }
         for (index, ch) in chars.iter().enumerate() {
-            if letters.get(&ch) == Some(&1) { return index as i32; }
+            if letters.get(&ch) == Some(&1) {
+                return index as i32;
+            }
         }
         -1
     }
 }
-
 
 #[cfg(test)]
 mod tests {

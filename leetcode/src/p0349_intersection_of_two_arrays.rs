@@ -18,7 +18,6 @@
 
 pub struct Solution {}
 
-
 // use std::collections::HashSet;
 use std::collections::BTreeSet;
 impl Solution {
@@ -27,10 +26,12 @@ impl Solution {
         // let nums_set2: HashSet<i32> = nums2.iter().cloned().collect();
         let nums_set1: BTreeSet<i32> = nums1.iter().cloned().collect();
         let nums_set2: BTreeSet<i32> = nums2.iter().cloned().collect();
-        nums_set1.intersection(&nums_set2).cloned().collect::<Vec<i32>>()
+        nums_set1
+            .intersection(&nums_set2)
+            .cloned()
+            .collect::<Vec<i32>>()
     }
 }
-
 
 #[cfg(test)]
 mod tests {
@@ -39,7 +40,13 @@ mod tests {
     #[test]
     fn intersection_test() {
         assert_eq!(Solution::intersection(vec![], vec![2, 2]), vec![]);
-        assert_eq!(Solution::intersection(vec![1, 2, 2, 1], vec![2, 2]), vec![2]);
-        assert_eq!(Solution::intersection(vec![4, 9, 5], vec![9, 4, 9, 8, 4]), vec![4, 9]);
+        assert_eq!(
+            Solution::intersection(vec![1, 2, 2, 1], vec![2, 2]),
+            vec![2]
+        );
+        assert_eq!(
+            Solution::intersection(vec![4, 9, 5], vec![9, 4, 9, 8, 4]),
+            vec![4, 9]
+        );
     }
 }

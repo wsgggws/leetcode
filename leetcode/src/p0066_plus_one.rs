@@ -20,7 +20,6 @@
 
 pub struct Solution {}
 
-
 impl Solution {
     pub fn plus_one(digits: Vec<i32>) -> Vec<i32> {
         let mut num = 1;
@@ -34,17 +33,18 @@ impl Solution {
                 if value > 9 {
                     num = 1;
                     result.insert(0, 0);
-                }else{
+                } else {
                     num = 0;
                     result.insert(0, value);
                 }
             }
         }
-        if num == 1 { result.insert(0, 1); }
+        if num == 1 {
+            result.insert(0, 1);
+        }
         result
     }
 }
-
 
 #[cfg(test)]
 mod tests {

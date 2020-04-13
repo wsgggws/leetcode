@@ -23,11 +23,14 @@
 
 pub struct Solution {}
 
-
 impl Solution {
     pub fn is_palindrome(x: i32) -> bool {
-        if x >= 0 && x <= 9 { return true}
-        if x < 0 || x % 10 == 0 { return false}
+        if x >= 0 && x <= 9 {
+            return true;
+        }
+        if x < 0 || x % 10 == 0 {
+            return false;
+        }
         let mut digits: Vec<i32> = Vec::new();
         let mut input = x;
         while input != 0 {
@@ -36,14 +39,15 @@ impl Solution {
         }
         let len = digits.len();
         let mut index = 0;
-        while index < len/2 {
-            if digits[index] != digits[len-index-1] {return false}
+        while index < len / 2 {
+            if digits[index] != digits[len - index - 1] {
+                return false;
+            }
             index += 1;
         }
         true
     }
 }
-
 
 #[cfg(test)]
 mod tests {

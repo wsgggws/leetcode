@@ -15,8 +15,8 @@
 
 // Roman numerals are usually written largest to smallest from left to right. However, the numeral for four is not IIII. Instead, the number four is written as IV. Because the one is before the five we subtract it making four. The same principle applies to the number nine, which is written as IX. There are six instances where subtraction is used:
 
-// I can be placed before V (5) and X (10) to make 4 and 9. 
-// X can be placed before L (50) and C (100) to make 40 and 90. 
+// I can be placed before V (5) and X (10) to make 4 and 9.
+// X can be placed before L (50) and C (100) to make 40 and 90.
 // C can be placed before D (500) and M (1000) to make 400 and 900.
 // Given an integer, convert it to a roman numeral. Input is guaranteed to be within the range from 1 to 3999.
 
@@ -44,7 +44,6 @@
 // Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 
 pub struct Solution {}
-
 
 impl Solution {
     pub fn int_to_roman(num: i32) -> String {
@@ -78,29 +77,30 @@ impl Solution {
             ("CM", 900),
             ("M", 1000),
             ("MM", 2000),
-            ("MMM", 3000)
+            ("MMM", 3000),
         ];
         let mut number = num;
         let mut mutilples = 1;
         let mut roman_str = String::new();
         for symbol in &symbols {
             let current_num = number % 10;
-            if (current_num == 0) || (symbol.1 == current_num*mutilples) {
+            if (current_num == 0) || (symbol.1 == current_num * mutilples) {
                 number /= 10;
                 mutilples *= 10;
                 if current_num != 0 {
                     roman_str = format!("{}{}", symbol.0.to_string(), roman_str);
                 }
             }
-            if number <= 0 { break; }
+            if number <= 0 {
+                break;
+            }
         }
         roman_str
     }
 }
 
-
 #[cfg(test)]
-mod tests{
+mod tests {
     use super::*;
 
     #[test]

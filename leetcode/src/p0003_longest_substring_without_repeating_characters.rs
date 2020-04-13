@@ -6,8 +6,8 @@
 // Example 1:
 
 // Input: "abcabcbb"
-// Output: 3 
-// Explanation: The answer is "abc", with the length of 3. 
+// Output: 3
+// Explanation: The answer is "abc", with the length of 3.
 // Example 2:
 
 // Input: "bbbbb"
@@ -17,7 +17,7 @@
 
 // Input: "pwwkew"
 // Output: 3
-// Explanation: The answer is "wke", with the length of 3. 
+// Explanation: The answer is "wke", with the length of 3.
 //              Note that the answer must be a substring, "pwke" is a subsequence and not a substring.
 
 pub struct Solution {}
@@ -52,8 +52,14 @@ mod tests {
 
     #[test]
     fn length_of_longest_substring_test() {
-        assert_eq!(Solution::length_of_longest_substring("abcabcbb".to_owned()), 3);
+        assert_eq!(
+            Solution::length_of_longest_substring("abcabcbb".to_owned()),
+            3
+        );
         assert_eq!(Solution::length_of_longest_substring("bbbbb".to_owned()), 1);
-        assert_eq!(Solution::length_of_longest_substring("pwwkew".to_owned()), 3);
+        assert_eq!(
+            Solution::length_of_longest_substring("pwwkew".to_owned()),
+            3
+        );
     }
 }

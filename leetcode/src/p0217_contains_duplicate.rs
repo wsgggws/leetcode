@@ -20,7 +20,6 @@
 
 pub struct Solution {}
 
-
 use std::collections::HashSet;
 impl Solution {
     pub fn contains_duplicate(nums: Vec<i32>) -> bool {
@@ -28,7 +27,6 @@ impl Solution {
         sub.len() != nums.len()
     }
 }
-
 
 #[cfg(test)]
 mod tests {

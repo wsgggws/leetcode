@@ -14,16 +14,14 @@
 
 pub struct Solution {}
 
-
 impl Solution {
     pub fn length_of_last_word(s: String) -> i32 {
         let splits: Vec<&str> = s.trim().split(" ").collect();
         let len = splits.len();
-        let last_word = splits[len-1].trim();
+        let last_word = splits[len - 1].trim();
         last_word.len() as i32
     }
 }
-
 
 #[cfg(test)]
 mod tests {

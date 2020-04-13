@@ -25,7 +25,6 @@
 
 pub struct Solution {}
 
-
 impl Solution {
     pub fn climb_stairs(n: i32) -> i32 {
         // // 如果使用递归, 会Time Limit Exceeded
@@ -36,8 +35,12 @@ impl Solution {
         //     return Solution::climb_stairs(n-1) + Solution::climb_stairs(n-2);
         // }
 
-        if n == 1 { return 1; }
-        if n == 2 { return 2; }
+        if n == 1 {
+            return 1;
+        }
+        if n == 2 {
+            return 2;
+        }
         let mut before_two = 1;
         let mut before_one = 2;
         let mut result = 0;
@@ -49,7 +52,6 @@ impl Solution {
         result
     }
 }
-
 
 #[cfg(test)]
 mod tests {
