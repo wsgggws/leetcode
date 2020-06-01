@@ -16,6 +16,10 @@ cargo test p0007_reverse_integer  // 只测试单个模块下的测试
 - [11. Container With Most Water (Medium)](https://leetcode.com/problems/container-with-most-water/)
 - [26. Remove Duplicates from Sorted Array (Easy)](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
 
+## 数据结构（堆栈)
+- [232. Implement Queue using Stacks(Easy)](https://leetcode.com/problems/implement-queue-using-stacks/)
+- [32. Longest Valid Parentheses(Hard)](https://leetcode.com/problems/longest-valid-parentheses/)
+
 ## 双指针
 - [167. Two Sum II - Input array is sorted (Easy)](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)
 - [633. Sum of Square Numbers (Easy)](https://leetcode.com/problems/sum-of-square-numbers/)
