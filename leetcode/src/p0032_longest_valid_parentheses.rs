@@ -80,7 +80,7 @@ impl Solution {
                 count = 0;
             } else if !stack.is_empty() && parenthes == ')' {
                 if let Some(value) = stack.pop() {
-                    count += (1 + value);
+                    count += 1 + value;
                 }
                 result = i32::max(result, count)
             } else {
