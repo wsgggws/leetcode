@@ -36,3 +36,13 @@ impl Solution {
         }
     }
 }
+
+#[cfg(test)]
+mod tests {
+    // use super::*;
+    #[test]
+    fn preorder_traversal_test() {
+        // TODO TEST
+        assert_eq!(2 + 2, 4)
+    }
+}
