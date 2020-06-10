@@ -94,6 +94,7 @@ pub mod p0695_max_area_of_island;
 pub mod p0744_find_smalllest_greater_than_target;
 pub mod p1091_shortest_path_in_binary_matrix;
 pub mod p1143_longest_common_subsequence;
+pub mod p1470_shuffle_the_array;
 
 pub mod p0225_implement_stack_using_queues;
 pub mod p0032_longest_valid_parentheses;
