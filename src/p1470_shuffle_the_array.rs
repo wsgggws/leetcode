@@ -32,13 +32,20 @@ pub struct Solution {}
 
 impl Solution {
     pub fn shuffle(nums: Vec<i32>, n: i32) -> Vec<i32> {
-        // TODO 如何用一行实现？迭代器，适配器，消费器
-        let mut result = vec![];
-        for index in 0..n as usize {
-            result.push(nums[index]);
-            result.push(nums[index + n as usize]);
-        }
-        result
+        // 用一行实现？迭代器，适配器，消费器, 函数式编程我很喜欢这种方式
+        nums[0..n as usize].iter()
+            .zip(nums[n as usize ..].iter())
+            .map(|(a, b)| vec![*a, *b])
+            .flatten()
+            .collect::<Vec<i32>>()
+
+        // 使用常规方法实现
+        // let mut result = vec![];
+        // for index in 0..n as usize {
+        //     result.push(nums[index]);
+        //     result.push(nums[index + n as usize]);
+        // }
+        // result
     }
 }
 
@@ -49,5 +56,6 @@ mod tests {
     #[test]
     fn shuffle_test() {
         assert_eq!(Solution::shuffle(vec![1, 2, 3, 4], 2), vec![1, 3, 2, 4]);
+        assert_eq!(Solution::shuffle(vec![1, 2, 3, 4, 5, 6, 7, 8], 4), vec![1, 5, 2, 6, 3, 7, 4, 8]);
     }
 }
