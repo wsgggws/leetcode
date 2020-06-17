@@ -37,6 +37,7 @@ pub mod p0125_valid_palindrome;
 pub mod p0134_gas_station;
 pub mod p0136_single_number;
 pub mod p0144_binary_tree_preorder_traversal;
+pub mod p0145_binary_tree_postorder_traversal;
 pub mod p0153_find_minimum_in_rotated_sorted_array;
 pub mod p0167_two_sum_ii_array_is_sorted;
 pub mod p0168_excel_sheet_column_title;
