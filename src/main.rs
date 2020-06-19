@@ -111,6 +111,7 @@ pub mod p0201_bitwise_and_of_numbers_range;
 // 二分查找
 pub mod p0704_binary_search;
 pub mod p0035_search_insert_position;
+pub mod p0074_search_a_2d_matrix;
 
 fn main() {
     println!("Hello, rust and leetcode!");
