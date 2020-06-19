@@ -109,6 +109,9 @@ pub mod p0191_number_of_1_bits;
 pub mod p0338_counting_bits;
 pub mod p0201_bitwise_and_of_numbers_range;
 
+// 二分查找
+pub mod p0704_binary_search;
+
 fn main() {
     println!("Hello, rust and leetcode!");
 }
