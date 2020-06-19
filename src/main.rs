@@ -112,6 +112,7 @@ pub mod p0704_binary_search;
 pub mod p0035_search_insert_position;
 pub mod p0074_search_a_2d_matrix;
 pub mod p0153_find_minimum_in_rotated_sorted_array;
+pub mod p0154_find_minimum_in_rotated_sorted_array_ii;
 
 fn main() {
     println!("Hello, rust and leetcode!");
