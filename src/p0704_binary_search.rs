@@ -34,7 +34,7 @@ impl Solution {
     pub fn search_2(nums: Vec<i32>, target: i32) -> i32 {
         let (mut start, mut end) = (0i32, nums.len() as i32 -1);
         while start <= end {
-            let mid = (start + end) / 2;
+            let mid = start + (end - start) / 2;
             if nums[mid as usize] == target {
                 return mid;
             } else if nums[mid as usize] > target {
