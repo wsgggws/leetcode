@@ -35,7 +35,6 @@ pub mod p0121_best_time_to_buy_and_sell_stock;
 pub mod p0122_best_time_to_buy_and_sell_stock_ii;
 pub mod p0125_valid_palindrome;
 pub mod p0134_gas_station;
-pub mod p0136_single_number;
 pub mod p0144_binary_tree_preorder_traversal;
 pub mod p0145_binary_tree_postorder_traversal;
 pub mod p0153_find_minimum_in_rotated_sorted_array;
@@ -98,8 +97,17 @@ pub mod p1143_longest_common_subsequence;
 pub mod p1470_shuffle_the_array;
 pub mod p1464_maximum_product_of_two_elements_in_an_array;
 
+// 堆栈
 pub mod p0225_implement_stack_using_queues;
 pub mod p0032_longest_valid_parentheses;
+
+// 二进制
+pub mod p0136_single_number;
+pub mod p0137_single_number_ii;
+pub mod p0260_single_number_iii;
+pub mod p0191_number_of_1_bits;
+pub mod p0338_counting_bits;
+pub mod p0201_bitwise_and_of_numbers_range;
 
 fn main() {
     println!("Hello, rust and leetcode!");
