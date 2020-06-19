@@ -30,8 +30,8 @@ impl Solution {
         }
     }
 
-    // 二分搜索法
-    pub fn search_2(nums: Vec<i32>, target: i32) -> i32 {
+    // 二分搜索法模板一, 左开右开[], 适用于无重复
+    pub fn search_1(nums: Vec<i32>, target: i32) -> i32 {
         let (mut start, mut end) = (0i32, nums.len() as i32 -1);
         while start <= end {
             let mid = start + (end - start) / 2;
@@ -45,6 +45,24 @@ impl Solution {
         }
         -1
     }
+
+    // 二分搜索法模板 强烈推荐左开右闭[l, r), 可适用于不递减少，寻找最左值
+    pub fn search_2(nums: Vec<i32>, target: i32) -> i32 {
+        let (mut start, mut end) = (0usize, nums.len());
+        while start < end {
+            let mid = start + (end - start) / 2;
+            if nums[mid] >= target {
+                end = mid;
+            } else {
+                start = mid + 1;
+            }
+        }
+        if start < nums.len() && nums[start] == target {
+            start as i32
+        } else {
+            -1
+        }
+    }
 }
 
 #[cfg(test)]
@@ -53,17 +71,28 @@ mod tests {
 
     #[test]
     fn search_test() {
-        assert_eq!(Solution::search(vec![1, 0, 3, 5, 9, 12], 9), 4);
-        assert_eq!(Solution::search(vec![1, 0, 3, 5, 9, 12], 8), -1);
-        assert_eq!(Solution::search(vec![1, 0, 3, 5, 9, 12], 12), 5);
-        assert_eq!(Solution::search(vec![1, 0, 3, 5, 9, 12], 1), 0);
+        assert_eq!(Solution::search(vec![0, 1, 3, 5, 9, 12], 9), 4);
+        assert_eq!(Solution::search(vec![0, 1, 3, 5, 9, 12], 8), -1);
+        assert_eq!(Solution::search(vec![0, 1, 3, 5, 9, 12], 12), 5);
+        assert_eq!(Solution::search(vec![0, 1, 3, 5, 9, 12], 0), 0);
+    }
+
+    #[test]
+    fn search_1_test() {
+        assert_eq!(Solution::search_1(vec![0, 1, 3, 5, 9, 12], 9), 4);
+        assert_eq!(Solution::search_1(vec![0, 1, 3, 5, 9, 12], 8), -1);
+        assert_eq!(Solution::search_1(vec![0, 1, 3, 5, 9, 12], 12), 5);
+        assert_eq!(Solution::search_1(vec![0, 1, 3, 5, 9, 12], 13), -1);
+        assert_eq!(Solution::search_1(vec![0, 1, 3, 5, 9, 12], 0), 0);
     }
 
     #[test]
     fn search_2_test() {
-        assert_eq!(Solution::search_2(vec![1, 0, 3, 5, 9, 12], 9), 4);
-        assert_eq!(Solution::search_2(vec![1, 0, 3, 5, 9, 12], 8), -1);
-        assert_eq!(Solution::search_2(vec![1, 0, 3, 5, 9, 12], 12), 5);
-        assert_eq!(Solution::search_2(vec![1, 0, 3, 5, 9, 12], 1), 0);
+        assert_eq!(Solution::search_2(vec![0, 1, 3, 5, 9, 12], 9), 4);
+        assert_eq!(Solution::search_2(vec![0, 1, 3, 5, 9, 12], 8), -1);
+        assert_eq!(Solution::search_2(vec![0, 1, 3, 5, 9, 12], 12), 5);
+        assert_eq!(Solution::search_2(vec![0, 1, 3, 5, 9, 12], 13), -1);
+        // 使用左开右闭还能够找到最左值
+        assert_eq!(Solution::search_2(vec![0, 1, 3, 5, 9, 12], 0), 0);
     }
 }
