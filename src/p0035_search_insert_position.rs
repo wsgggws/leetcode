@@ -25,27 +25,18 @@
 pub struct Solution {}
 
 impl Solution {
+    // 直接使用模板2, 左开右闭[l, r]
     pub fn search_insert(nums: Vec<i32>, target: i32) -> i32 {
-        if target <= nums[0] {
-            return 0 as i32;
-        }
-        let len = nums.len();
-        if target > nums[len - 1] {
-            return len as i32;
-        }
-        let mut start = 0;
-        let mut end = len - 1;
-        // 使用二分法进行查找
+        let (mut start, mut end) = (0, nums.len());
         while start < end {
-            let mid = (start + end) / 2;
-            if nums[mid] < target && target <= nums[mid + 1] {
-                return (mid + 1) as i32;
-            } else if target <= nums[mid] {
+            let mid = start + (end - start) / 2;
+            if nums[mid] >= target {
                 end = mid;
-            } else if target > nums[mid + 1] {
-                start = mid;
+            } else {
+                start = mid + 1;
             }
         }
+        // 二分搜索最后start == end, 如果数组里不存在，start就是该值存在的索引
         start as i32
     }
 }
@@ -56,12 +47,18 @@ mod tests {
 
     #[test]
     fn search_insert_test() {
+        // 有，最前面
         assert_eq!(Solution::search_insert(vec![1, 3], 1), 0);
-        assert_eq!(Solution::search_insert(vec![1, 3], 2), 1);
+        // 有，最后面
         assert_eq!(Solution::search_insert(vec![1, 3], 3), 1);
+        // 有，在中间
         assert_eq!(Solution::search_insert(vec![1, 3, 5, 6], 5), 2);
+        // 没有，应该在中间
+        assert_eq!(Solution::search_insert(vec![1, 3], 2), 1);
         assert_eq!(Solution::search_insert(vec![1, 3, 5, 6], 2), 1);
+        // 没有，在最后面
         assert_eq!(Solution::search_insert(vec![1, 3, 5, 6], 7), 4);
+        // 没有，在最前面
         assert_eq!(Solution::search_insert(vec![1, 3, 5, 6], 0), 0);
     }
 }

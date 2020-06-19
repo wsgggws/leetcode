@@ -15,7 +15,6 @@ pub mod p0026_remove_duplicates_from_sorted_array;
 pub mod p0027_remove_element;
 pub mod p0028_implement_strstr;
 pub mod p0034_find_first_and_last_position_of_element_in_sorted_array;
-pub mod p0035_search_insert_position;
 pub mod p0038_count_and_say;
 pub mod p0048_rotate_image;
 pub mod p0049_group_anagrams;
@@ -111,6 +110,7 @@ pub mod p0201_bitwise_and_of_numbers_range;
 
 // 二分查找
 pub mod p0704_binary_search;
+pub mod p0035_search_insert_position;
 
 fn main() {
     println!("Hello, rust and leetcode!");
