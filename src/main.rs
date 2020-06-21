@@ -117,6 +117,7 @@ pub mod p0062_unique_paths;
 pub mod p0063_unique_paths_ii;
 pub mod p0070_climbing_stairs;
 pub mod p0055_jump_game;
+pub mod p0045_jump_game_ii;
 
 fn main() {
     println!("Hello, rust and leetcode!");
