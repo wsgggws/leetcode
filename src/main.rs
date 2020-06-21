@@ -24,7 +24,6 @@ pub mod p0058_length_of_last_word;
 pub mod p0066_plus_one;
 pub mod p0067_add_binary;
 pub mod p0069_sqrt_x;
-pub mod p0070_climbing_stairs;
 pub mod p0088_merge_sorted_array;
 pub mod p0118_pascals_triangle;
 pub mod p0119_pascals_triangle_ii;
@@ -116,6 +115,8 @@ pub mod p0154_find_minimum_in_rotated_sorted_array_ii;
 pub mod p0064_minimum_path_sum;
 pub mod p0062_unique_paths;
 pub mod p0063_unique_paths_ii;
+pub mod p0070_climbing_stairs;
+pub mod p0055_jump_game;
 
 fn main() {
     println!("Hello, rust and leetcode!");
