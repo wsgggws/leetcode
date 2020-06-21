@@ -115,6 +115,7 @@ pub mod p0154_find_minimum_in_rotated_sorted_array_ii;
 // 动态规划
 pub mod p0064_minimum_path_sum;
 pub mod p0062_unique_paths;
+pub mod p0063_unique_paths_ii;
 
 fn main() {
     println!("Hello, rust and leetcode!");
