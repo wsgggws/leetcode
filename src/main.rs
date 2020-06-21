@@ -21,8 +21,6 @@ pub mod p0049_group_anagrams;
 pub mod p0050_pow_x_n;
 pub mod p0053_maximum_subarray;
 pub mod p0058_length_of_last_word;
-pub mod p0062_unique_paths;
-pub mod p0064_minimum_path_sum;
 pub mod p0066_plus_one;
 pub mod p0067_add_binary;
 pub mod p0069_sqrt_x;
@@ -113,6 +111,10 @@ pub mod p0035_search_insert_position;
 pub mod p0074_search_a_2d_matrix;
 pub mod p0153_find_minimum_in_rotated_sorted_array;
 pub mod p0154_find_minimum_in_rotated_sorted_array_ii;
+
+// 动态规划
+pub mod p0064_minimum_path_sum;
+pub mod p0062_unique_paths;
 
 fn main() {
     println!("Hello, rust and leetcode!");

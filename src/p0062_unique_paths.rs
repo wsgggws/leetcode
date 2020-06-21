@@ -28,6 +28,7 @@
 pub struct Solution {}
 
 impl Solution {
+    // 利用数学方法 组合 来计算
     pub fn unique_paths(m: i32, n: i32) -> i32 {
         // 总移动次数为 m+n-2
         let total_steps = (m + n - 2) as i64;
@@ -40,6 +41,17 @@ impl Solution {
         }
         result as i32
     }
+
+    // 使用动态规划
+    pub fn unique_paths_dp(m: i32, n: i32) -> i32 {
+        let mut dp = vec![vec![1; n as usize]; m as usize];
+        for i in 1..m as usize {
+            for j in 1..n as usize {
+                dp[i][j] = dp[i-1][j] + dp[i][j-1]
+            }
+        }
+        dp[m as usize- 1][n as usize - 1]
+    }
 }
 
 #[cfg(test)]
@@ -51,5 +63,12 @@ mod tests {
         assert_eq!(Solution::unique_paths(3, 2), 3);
         assert_eq!(Solution::unique_paths(7, 3), 28);
         assert_eq!(Solution::unique_paths(23, 12), 193536720);
+    }
+
+    #[test]
+    fn unique_paths_dp_test() {
+        assert_eq!(Solution::unique_paths_dp(3, 2), 3);
+        assert_eq!(Solution::unique_paths_dp(7, 3), 28);
+        assert_eq!(Solution::unique_paths_dp(23, 12), 193536720);
     }
 }
