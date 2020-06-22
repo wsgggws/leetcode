@@ -86,6 +86,7 @@ pub mod p1091_shortest_path_in_binary_matrix;
 pub mod p1143_longest_common_subsequence;
 pub mod p1470_shuffle_the_array;
 pub mod p1464_maximum_product_of_two_elements_in_an_array;
+pub mod p1487_making_file_names_unique;
 
 // 堆栈
 pub mod p0225_implement_stack_using_queues;
