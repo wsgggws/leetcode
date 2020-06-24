@@ -122,6 +122,7 @@ pub mod p0045_jump_game_ii;
 pub mod p0322_coin_change;
 pub mod p0120_triangle;
 pub mod p0300_longest_increasing_subsequence;
+pub mod p0139_word_break;
 
 fn main() {
     println!("Hello, rust and leetcode!");
