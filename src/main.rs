@@ -82,7 +82,6 @@ pub mod p0650_2_keys_keyboard;
 pub mod p0680_valid_palindrome_ii;
 pub mod p0695_max_area_of_island;
 pub mod p1091_shortest_path_in_binary_matrix;
-pub mod p1143_longest_common_subsequence;
 pub mod p1470_shuffle_the_array;
 pub mod p1464_maximum_product_of_two_elements_in_an_array;
 pub mod p1487_making_file_names_unique;
@@ -123,6 +122,8 @@ pub mod p0322_coin_change;
 pub mod p0120_triangle;
 pub mod p0300_longest_increasing_subsequence;
 pub mod p0139_word_break;
+pub mod p1143_longest_common_subsequence;
+// TODO 72, 132, 140
 
 fn main() {
     println!("Hello, rust and leetcode!");

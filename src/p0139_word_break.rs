@@ -33,6 +33,10 @@ impl Solution {
             for j in 0..word_dict.len() {
                 if dp[i] == true && i+word_dict[j].len() <= s.len() && s[i..i+word_dict[j].len()] == word_dict[j] {
                     dp[i+word_dict[j].len()] = true;
+                    if dp[s.len()] == true {
+                        // 优化，找到了就立马结束
+                        return true;
+                    }
                 }
             }
         }
