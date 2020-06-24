@@ -35,6 +35,19 @@ impl Solution {
         }
         result
     }
+
+    pub fn length_of_lis_2(nums: Vec<i32>) -> i32 {
+        let mut dp: Vec<i32> = vec![1; nums.len()];
+        for i in 1..nums.len() {
+            for j in 0..=i {
+                if nums[i] > nums[i-j] {
+                    dp[i] = i32::max(dp[i], dp[i-j]+1);
+                }
+            }
+        }
+        // NOTE: nums 可能为[], 故unwrap_or(0)
+        dp.into_iter().max().unwrap_or(0)
+    }
 }
 
 #[cfg(test)]
@@ -43,6 +56,13 @@ mod tests {
 
     #[test]
     fn length_of_lis_test() {
+        assert_eq!(Solution::length_of_lis(vec![1, 2, 3, 4, 5, 6, 7, 8]), 8);
         assert_eq!(Solution::length_of_lis(vec![10, 9, 2, 5, 3, 7, 101, 18]), 4);
+    }
+
+    #[test]
+    fn length_of_lis_2_test() {
+        assert_eq!(Solution::length_of_lis_2(vec![1, 2, 3, 4, 5, 6, 7, 8]), 8);
+        assert_eq!(Solution::length_of_lis_2(vec![10, 9, 2, 5, 3, 7, 101, 18]), 4);
     }
 }

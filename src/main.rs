@@ -49,7 +49,6 @@ pub mod p0258_add_digits;
 pub mod p0263_ugly_number;
 pub mod p0268_missing_number;
 pub mod p0279_perfect_squares;
-pub mod p0300_longest_increasing_subsequence;
 pub mod p0326_power_of_three;
 pub mod p0342_power_of_four;
 pub mod p0343_integer_break;
@@ -114,14 +113,15 @@ pub mod p0034_find_first_and_last_position_of_element_in_sorted_array;
 pub mod p0367_valid_perfect_square;
 
 // 动态规划
-pub mod p0064_minimum_path_sum;
 pub mod p0062_unique_paths;
 pub mod p0063_unique_paths_ii;
+pub mod p0064_minimum_path_sum;
 pub mod p0070_climbing_stairs;
 pub mod p0055_jump_game;
 pub mod p0045_jump_game_ii;
 pub mod p0322_coin_change;
 pub mod p0120_triangle;
+pub mod p0300_longest_increasing_subsequence;
 
 fn main() {
     println!("Hello, rust and leetcode!");
