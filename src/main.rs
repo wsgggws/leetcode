@@ -93,6 +93,7 @@ pub mod p0921_minimum_add_to_make_parentheses_valid;
 pub mod p1021_remove_outermost_parentheses;
 pub mod p0071_simplify_path;
 pub mod p0150_evaluate_reverse_polish_notation;
+pub mod p0155_min_stack;
 
 // 二进制
 pub mod p0136_single_number;
