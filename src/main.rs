@@ -91,6 +91,7 @@ pub mod p0225_implement_stack_using_queues;
 pub mod p0032_longest_valid_parentheses;
 pub mod p0921_minimum_add_to_make_parentheses_valid;
 pub mod p1021_remove_outermost_parentheses;
+pub mod p0071_simplify_path;
 
 // 二进制
 pub mod p0136_single_number;
