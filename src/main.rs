@@ -10,7 +10,6 @@ pub mod p0012_integer_to_roman;
 pub mod p0013_roman_to_integer;
 pub mod p0014_longest_common_prefix;
 pub mod p0015_3sum;
-pub mod p0020_valid_parentheses;
 pub mod p0026_remove_duplicates_from_sorted_array;
 pub mod p0027_remove_element;
 pub mod p0028_implement_strstr;
@@ -87,8 +86,10 @@ pub mod p1464_maximum_product_of_two_elements_in_an_array;
 pub mod p1487_making_file_names_unique;
 
 // 堆栈
+pub mod p0020_valid_parentheses;
 pub mod p0225_implement_stack_using_queues;
 pub mod p0032_longest_valid_parentheses;
+pub mod p0921_minimum_add_to_make_parentheses_valid;
 
 // 二进制
 pub mod p0136_single_number;
