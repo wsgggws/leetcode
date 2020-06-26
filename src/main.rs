@@ -101,6 +101,16 @@ pub mod p0880_decoded_strnig_at_index;
 pub mod p0394_decode_string;
 pub mod p0856_score_of_parentheses;
 pub mod p0682_baseball_game;
+// TODO
+// pub mod p0496_next_greater_element_i.rs
+// pub mod p0503_next_greater_element_ii.rs
+// pub mod p0739_daily_temperatures.rs
+// pub mod p0901_online_stock_span.rs
+// pub mod p0907_sum_of_subarray_minimums.rs
+// pub mod p1019_next_greater_node_in_linked_list.rs
+// pub mod p0084_largest_rectangle_in_histogram.rs
+// pub mod p0224_basic_calculator.rs
+
 
 // 二进制
 pub mod p0136_single_number;
