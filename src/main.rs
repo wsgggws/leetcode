@@ -95,6 +95,7 @@ pub mod p0071_simplify_path;
 pub mod p0150_evaluate_reverse_polish_notation;
 pub mod p0155_min_stack;
 pub mod p0946_validate_stack_sequences;
+pub mod p1047_remove_all_adjacent_duplicates_in_string;
 
 // 二进制
 pub mod p0136_single_number;
