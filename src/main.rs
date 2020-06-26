@@ -98,6 +98,7 @@ pub mod p0946_validate_stack_sequences;
 pub mod p1047_remove_all_adjacent_duplicates_in_string;
 pub mod p0880_decoded_strnig_at_index;
 pub mod p0394_decode_string;
+pub mod p0856_score_of_parentheses;
 
 // 二进制
 pub mod p0136_single_number;
