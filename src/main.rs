@@ -99,6 +99,7 @@ pub mod p1047_remove_all_adjacent_duplicates_in_string;
 pub mod p0880_decoded_strnig_at_index;
 pub mod p0394_decode_string;
 pub mod p0856_score_of_parentheses;
+pub mod p0682_baseball_game;
 
 // 二进制
 pub mod p0136_single_number;
