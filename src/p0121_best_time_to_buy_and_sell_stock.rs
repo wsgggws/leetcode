@@ -35,6 +35,15 @@ impl Solution {
         }
         result
     }
+    pub fn max_profit_dp(prices: Vec<i32>) -> i32 {
+        let mut buy_price = prices[0];
+        let mut profit = 0;
+        for &price in prices.iter() {
+            buy_price = i32::min(buy_price, price);
+            profit = i32::max(profit, price - buy_price);
+        }
+        profit
+    }
 }
 
 #[cfg(test)]
@@ -45,5 +54,11 @@ mod tests {
     fn max_profit_test() {
         assert_eq!(Solution::max_profit(vec![7, 1, 5, 3, 6, 4]), 5);
         assert_eq!(Solution::max_profit(vec![7, 6, 4, 3, 1]), 0);
+    }
+
+    #[test]
+    fn max_profit_dp_test() {
+        assert_eq!(Solution::max_profit_dp(vec![7, 6, 4, 3, 1]), 0);
+        assert_eq!(Solution::max_profit_dp(vec![7, 1, 5, 3, 6, 4]), 5);
     }
 }

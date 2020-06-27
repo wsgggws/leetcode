@@ -23,8 +23,6 @@ pub mod p0067_add_binary;
 pub mod p0088_merge_sorted_array;
 pub mod p0118_pascals_triangle;
 pub mod p0119_pascals_triangle_ii;
-pub mod p0121_best_time_to_buy_and_sell_stock;
-pub mod p0122_best_time_to_buy_and_sell_stock_ii;
 pub mod p0125_valid_palindrome;
 pub mod p0134_gas_station;
 pub mod p0144_binary_tree_preorder_traversal;
@@ -146,7 +144,9 @@ pub mod p0300_longest_increasing_subsequence;
 pub mod p0139_word_break;
 pub mod p1143_longest_common_subsequence;
 pub mod p0091_decode_ways;
-// TODO 72, 132, 140
+pub mod p0121_best_time_to_buy_and_sell_stock;
+pub mod p0122_best_time_to_buy_and_sell_stock_ii;
+// TODO 72, 132, 140, 96
 
 fn main() {
     println!("Hello, rust and leetcode!");
