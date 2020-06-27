@@ -148,7 +148,8 @@ pub mod p0357_count_numbers_with_unique_digits;
 pub mod p0392_is_subsequence;
 pub mod p0416_partition_equal_subset_sum;
 pub mod p0746_min_cost_climbing_stairs;
-// TODO 72, 132, 140, 96, 152, 309
+pub mod p1025_divisor_game;
+// TODO 72, 132, 140, 96, 152, 309, 838
 
 fn main() {
     println!("Hello, rust and leetcode!");
