@@ -17,7 +17,6 @@ pub mod p0038_count_and_say;
 pub mod p0048_rotate_image;
 pub mod p0049_group_anagrams;
 pub mod p0050_pow_x_n;
-pub mod p0053_maximum_subarray;
 pub mod p0058_length_of_last_word;
 pub mod p0066_plus_one;
 pub mod p0067_add_binary;
@@ -134,6 +133,7 @@ pub mod p0034_find_first_and_last_position_of_element_in_sorted_array;
 pub mod p0367_valid_perfect_square;
 
 // 动态规划
+pub mod p0053_maximum_subarray;
 pub mod p0062_unique_paths;
 pub mod p0063_unique_paths_ii;
 pub mod p0064_minimum_path_sum;
