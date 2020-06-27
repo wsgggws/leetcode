@@ -45,7 +45,6 @@ pub mod p0268_missing_number;
 pub mod p0279_perfect_squares;
 pub mod p0326_power_of_three;
 pub mod p0342_power_of_four;
-pub mod p0343_integer_break;
 pub mod p0344_reverse_string;
 pub mod p0345_reverse_vowels_of_a_string;
 pub mod p0349_intersection_of_two_arrays;
@@ -146,6 +145,8 @@ pub mod p0122_best_time_to_buy_and_sell_stock_ii;
 pub mod p0198_house_robber;
 pub mod p0213_house_robber_ii;
 pub mod p0338_counting_bits;
+pub mod p0343_integer_break;
+pub mod p0357_count_numbers_with_unique_digits;
 // TODO 72, 132, 140, 96, 152, 309
 
 fn main() {
