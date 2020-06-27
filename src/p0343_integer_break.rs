@@ -30,6 +30,21 @@ impl Solution {
         }
         dp[n as usize]
     }
+
+    pub fn integer_break_greedy(n: i32) -> i32 {
+        // 可以使用求导推送出来近可能靠近e 2.7..., 这里取3的积是最大的
+        if n == 2 || n == 3 {
+            return n - 1;
+        }
+        let mut result = 1;
+        let mut num = n;
+        while num  > 4 {
+            result *= 3;
+            num -= 3;
+        }
+        result * num
+    }
+
 }
 
 #[cfg(test)]
@@ -39,6 +54,14 @@ mod tests {
     #[test]
     fn integer_break_test() {
         assert_eq!(Solution::integer_break(2), 1);
+        assert_eq!(Solution::integer_break(3), 2);
         assert_eq!(Solution::integer_break(10), 36);
+    }
+
+    #[test]
+    fn integer_break_greedytest() {
+        assert_eq!(Solution::integer_break_greedy(2), 1);
+        assert_eq!(Solution::integer_break_greedy(3), 2);
+        assert_eq!(Solution::integer_break_greedy(10), 36);
     }
 }

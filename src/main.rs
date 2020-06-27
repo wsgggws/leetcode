@@ -33,10 +33,8 @@ pub mod p0169_majority_element;
 pub mod p0171_excel_sheet_column_number;
 pub mod p0172_factorial_trailing_zeroes;
 pub mod p0189_rotate_array;
-pub mod p0198_house_robber;
 pub mod p0202_happy_number;
 pub mod p0204_count_primes;
-pub mod p0213_house_robber_ii;
 pub mod p0217_contains_duplicate;
 pub mod p0219_contains_duplicate_ii;
 pub mod p0231_power_of_two;
@@ -114,7 +112,6 @@ pub mod p0136_single_number;
 pub mod p0137_single_number_ii;
 pub mod p0260_single_number_iii;
 pub mod p0191_number_of_1_bits;
-pub mod p0338_counting_bits;
 pub mod p0201_bitwise_and_of_numbers_range;
 pub mod p1486_xor_operation_in_an_array;
 
@@ -146,7 +143,10 @@ pub mod p1143_longest_common_subsequence;
 pub mod p0091_decode_ways;
 pub mod p0121_best_time_to_buy_and_sell_stock;
 pub mod p0122_best_time_to_buy_and_sell_stock_ii;
-// TODO 72, 132, 140, 96
+pub mod p0198_house_robber;
+pub mod p0213_house_robber_ii;
+pub mod p0338_counting_bits;
+// TODO 72, 132, 140, 96, 152, 309
 
 fn main() {
     println!("Hello, rust and leetcode!");
