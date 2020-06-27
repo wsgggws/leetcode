@@ -145,6 +145,7 @@ pub mod p0120_triangle;
 pub mod p0300_longest_increasing_subsequence;
 pub mod p0139_word_break;
 pub mod p1143_longest_common_subsequence;
+pub mod p0091_decode_ways;
 // TODO 72, 132, 140
 
 fn main() {
