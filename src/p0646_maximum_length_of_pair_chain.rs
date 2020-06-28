@@ -32,11 +32,7 @@ impl Solution {
                 }
             }
         }
-        let mut result = 0;
-        for i in 0..n {
-            result = i32::max(result, dp[i]);
-        }
-        result
+        *dp.iter().max().unwrap_or(&0)
     }
 }
 

@@ -42,7 +42,6 @@ pub mod p0238_product_of_array_except_self;
 pub mod p0258_add_digits;
 pub mod p0263_ugly_number;
 pub mod p0268_missing_number;
-pub mod p0279_perfect_squares;
 pub mod p0326_power_of_three;
 pub mod p0342_power_of_four;
 pub mod p0344_reverse_string;
@@ -63,13 +62,10 @@ pub mod p0448_find_all_numbers_disappeared_in_an_array;
 pub mod p0453_minimum_moves_to_equal_array_elements;
 pub mod p0461_hamming_distance;
 pub mod p0462_minimum_moves_to_equal_array_element_ii;
-pub mod p0494_target_sum;
 pub mod p0504_base_7;
 pub mod p0524_longest_word_in_dictionary_through_deleting;
 pub mod p0628_maximum_product_of_three_numbers;
 pub mod p0633_sum_of_square_numbers;
-pub mod p0646_maximum_length_of_pair_chain;
-pub mod p0650_2_keys_keyboard;
 pub mod p0680_valid_palindrome_ii;
 pub mod p0695_max_area_of_island;
 pub mod p1091_shortest_path_in_binary_matrix;
@@ -150,7 +146,12 @@ pub mod p0416_partition_equal_subset_sum;
 pub mod p0746_min_cost_climbing_stairs;
 pub mod p1025_divisor_game;
 pub mod p0377_combination_sum_iv;
-// TODO 72, 132, 140, 96, 152, 309, 838, 891, 942, 518
+pub mod p0279_perfect_squares;
+pub mod p0646_maximum_length_of_pair_chain;
+pub mod p0376_wiggle_subsequence;
+pub mod p0494_target_sum;
+pub mod p0650_2_keys_keyboard;
+// TODO 72, 132, 140, 96, 152, 309, 838, 891, 942, 518, 474, 714, 123, 188, 583
 
 fn main() {
     println!("Hello, rust and leetcode!");

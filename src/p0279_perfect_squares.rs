@@ -21,14 +21,13 @@ impl Solution {
         let squares: Vec<i32> = Solution::get_squares(n);
         let mut dp: Vec<i32> = vec![0; (n + 1) as usize];
         for i in 1..=n {
-            let mut mins = i32::max_value();
+            dp[i as usize] = std::i32::MAX;
             for &square in squares.iter() {
                 if square > i {
                     break;
                 }
-                mins = i32::min(mins, dp[(i - square) as usize] + 1);
+                dp[i as usize] = i32::min(dp[i as usize], dp[(i - square) as usize] + 1);
             }
-            dp[i as usize] = mins
         }
         dp[n as usize]
     }
