@@ -151,6 +151,8 @@ pub mod p0646_maximum_length_of_pair_chain;
 pub mod p0376_wiggle_subsequence;
 pub mod p0494_target_sum;
 pub mod p0650_2_keys_keyboard;
+pub mod p0303_range_sum_query_immutable;
+pub mod p0413_arithmetic_slices;
 // TODO 72, 132, 140, 96, 152, 309, 838, 891, 942, 518, 474, 714, 123, 188, 583
 
 fn main() {
