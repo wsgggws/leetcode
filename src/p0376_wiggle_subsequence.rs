@@ -36,7 +36,7 @@ impl Solution {
         for i in 1..n {
             if nums[i] > nums[i - 1] {
                 up = down + 1;
-            } else if nnums[i] < nums[i - 1] {
+            } else if nums[i] < nums[i - 1] {
                 down = up + 1;
             }
         }
