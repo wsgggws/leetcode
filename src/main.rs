@@ -94,6 +94,7 @@ pub mod p0739_daily_temperatures;
 pub mod p0084_largest_rectangle_in_histogram;
 pub mod p0503_next_greater_element_ii;
 // TODO
+// pub mod p0042_trapping_rain_water;
 // pub mod p0496_next_greater_element_i;
 // pub mod p0901_online_stock_span;
 // pub mod p0907_sum_of_subarray_minimums;
