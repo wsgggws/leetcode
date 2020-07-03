@@ -158,7 +158,8 @@ pub mod p0494_target_sum;
 pub mod p0650_2_keys_keyboard;
 pub mod p0303_range_sum_query_immutable;
 pub mod p0413_arithmetic_slices;
-// TODO 72, 132, 140, 96, 152, 309, 838, 891, 942, 518, 474, 714, 123, 188, 583
+pub mod p0072_edit_distance;
+// TODO 132, 140, 96, 152, 309, 838, 891, 942, 518, 474, 714, 123, 188, 583
 
 fn main() {
     println!("Hello, rust and leetcode!");
