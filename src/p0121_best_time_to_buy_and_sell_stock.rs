@@ -35,7 +35,7 @@ impl Solution {
         }
         result
     }
-    pub fn max_profit_dp(prices: Vec<i32>) -> i32 {
+    pub fn max_profit_greedy(prices: Vec<i32>) -> i32 {
         let mut buy_price = prices[0];
         let mut profit = 0;
         for &price in prices.iter() {
@@ -43,6 +43,18 @@ impl Solution {
             profit = i32::max(profit, price - buy_price);
         }
         profit
+    }
+
+    pub fn max_profit_dp(prices: Vec<i32>) -> i32 {
+        if prices.len() < 2 {
+            return 0;
+        }
+        let mut dp: Vec<i32> = vec![0; prices.len()];
+        dp[0] = 0;
+        for i in 1..prices.len() {
+            dp[i] = i32::max(dp[i-1] + prices[i] - prices[i-1], 0);
+        }
+        *dp.iter().max().unwrap_or(&0)
     }
 }
 
@@ -54,6 +66,12 @@ mod tests {
     fn max_profit_test() {
         assert_eq!(Solution::max_profit(vec![7, 1, 5, 3, 6, 4]), 5);
         assert_eq!(Solution::max_profit(vec![7, 6, 4, 3, 1]), 0);
+    }
+
+    #[test]
+    fn max_profit_greedy_test() {
+        assert_eq!(Solution::max_profit_greedy(vec![7, 6, 4, 3, 1]), 0);
+        assert_eq!(Solution::max_profit_greedy(vec![7, 1, 5, 3, 6, 4]), 5);
     }
 
     #[test]
