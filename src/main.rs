@@ -74,6 +74,7 @@ pub mod p1464_maximum_product_of_two_elements_in_an_array;
 pub mod p1487_making_file_names_unique;
 pub mod p0456_132_pattern;
 pub mod p0283_move_zeroes;
+pub mod p0205_isomorphic_strings;
 
 // 堆栈
 pub mod p0020_valid_parentheses;
