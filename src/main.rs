@@ -78,6 +78,7 @@ pub mod p0205_isomorphic_strings;
 pub mod p0242_valid_anagram;
 pub mod p0560_subarray_sum_equals_k;
 pub mod p0724_find_pivot_index;
+pub mod p0350_intersection_of_two_array_ii;
 
 // 堆栈
 pub mod p0020_valid_parentheses;
