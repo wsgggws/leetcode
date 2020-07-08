@@ -1,5 +1,10 @@
 pub mod p0001_two_sum;
 pub mod p0002_add_two_numbers;
+pub mod p0015_3sum;
+// TODO
+// pub mod p0016_3sum_closest;
+// pub mod p0018_4sum;
+
 pub mod p0003_longest_substring_without_repeating_characters;
 pub mod p0005_longest_palindromic_substring;
 pub mod p0007_reverse_integer;
@@ -9,7 +14,7 @@ pub mod p0011_container_with_most_water;
 pub mod p0012_integer_to_roman;
 pub mod p0013_roman_to_integer;
 pub mod p0014_longest_common_prefix;
-pub mod p0015_3sum;
+pub mod p0021_merge_two_sorted_lists;
 pub mod p0026_remove_duplicates_from_sorted_array;
 pub mod p0027_remove_element;
 pub mod p0028_implement_strstr;
@@ -80,6 +85,7 @@ pub mod p0560_subarray_sum_equals_k;
 pub mod p0724_find_pivot_index;
 pub mod p0350_intersection_of_two_array_ii;
 pub mod p0455_assign_cookies;
+pub mod p0523_continuous_subarray_sum;
 
 // 堆栈
 pub mod p0020_valid_parentheses;

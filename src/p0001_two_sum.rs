@@ -31,12 +31,10 @@ impl Solution {
         // 利用HashMap, 一次遍历
         let mut map = HashMap::new();
         for (index, num) in nums.iter().enumerate() {
-            // 这里必须得使用&符号, other_index也必须使用*号
-            match map.get(&(target - num)) {
-                None => {
-                    map.insert(num, index);
-                }
-                Some(other_index) => return vec![*other_index as i32, index as i32],
+            if let Some(&other_index) = map.get(&(target - num)) {
+                return vec![other_index as i32, index as i32]
+            } else {
+                map.insert(num, index);
             }
         }
         vec![]
