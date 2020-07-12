@@ -86,6 +86,7 @@ pub mod p0724_find_pivot_index;
 pub mod p0350_intersection_of_two_array_ii;
 pub mod p0455_assign_cookies;
 pub mod p0523_continuous_subarray_sum;
+pub mod p1512_number_of_good_pairs;
 
 // 堆栈
 pub mod p0020_valid_parentheses;
