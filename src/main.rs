@@ -89,6 +89,7 @@ pub mod p0523_continuous_subarray_sum;
 pub mod p1512_number_of_good_pairs;
 pub mod p1513_number_of_substrings_with_only_1s;
 pub mod p0264_ugly_number_ii;
+pub mod p0567_permutation_string;
 
 // 堆栈
 pub mod p0020_valid_parentheses;
