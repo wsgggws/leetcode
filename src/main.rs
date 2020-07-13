@@ -90,6 +90,7 @@ pub mod p1512_number_of_good_pairs;
 pub mod p1513_number_of_substrings_with_only_1s;
 pub mod p0264_ugly_number_ii;
 pub mod p0567_permutation_string;
+pub mod p0093_restore_ip_addresses;
 
 // 堆栈
 pub mod p0020_valid_parentheses;
