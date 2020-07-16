@@ -18,14 +18,19 @@ impl Solution {
         for i in 1..=3 {
             for j in 1..=3 {
                 for k in 1..=3 {
-                    if i+j+k < s.len() && Solution::is_ip_address(&s[0..i], &s[i..i+j], &s[i+j..i+j+k], &s[i+j+k..]) {
-                        let ip_address = s[0..i].to_owned() 
+                    if i + j + k < s.len()
+                        && Solution::is_valid_part(&s[0..i])
+                        && Solution::is_valid_part(&s[i..i + j])
+                        && Solution::is_valid_part(&s[i + j..i + j + k])
+                        && Solution::is_valid_part(&s[i + j + k..])
+                    {
+                        let ip_address = s[0..i].to_owned()
                             + &"."
-                            + &s[i..i+j]
+                            + &s[i..i + j]
                             + &"."
-                            + &s[i+j..i+j+k]
+                            + &s[i + j..i + j + k]
                             + &"."
-                            + &s[i+j+k..];
+                            + &s[i + j + k..];
                         ip_addresses.push(ip_address);
                     }
                 }
@@ -33,23 +38,18 @@ impl Solution {
         }
         ip_addresses
     }
-    fn is_ip_address(s1: &str, s2: &str, s3: &str, s4: &str) -> bool {
-        // 最后一位数字大于3位数绝对不合格
-        if s4.len() > 3 {
+    fn is_valid_part(s: &str) -> bool {
+        // 大于3位数绝对不合格
+        if s.len() > 3 {
             return false;
         }
         // 不允许有前导0，i.e: "01"
-        if (s1.len() > 1 && &s1[0..1] == "0")
-            || (s2.len() > 1 && &s2[0..1] == "0")
-            || (s3.len() > 1 && &s3[0..1] == "0") 
-            || (s4.len() > 1 && &s4[0..1] == "0") 
-        {
+        if s.len() > 1 && &s[0..1] == "0" {
             return false;
         } else {
-            if s1.parse::<i32>().unwrap() > 255 { return false; }
-            if s2.parse::<i32>().unwrap() > 255 { return false; }
-            if s3.parse::<i32>().unwrap() > 255 { return false; }
-            if s4.parse::<i32>().unwrap() > 255 { return false; }
+            if s.parse::<i32>().unwrap() > 255 {
+                return false;
+            }
         }
         true
     }
@@ -82,10 +82,14 @@ mod tests {
             vec!["255.255.255.255"]
         );
 
-        let expected_addresses: Vec<String> = Vec::new();
+        let empty_vec: Vec<String> = Vec::new();
+        assert_eq!(
+            Solution::restore_ip_addresses("555".to_owned()),
+            empty_vec
+        );
         assert_eq!(
             Solution::restore_ip_addresses("55555555555555555".to_owned()),
-            expected_addresses
+            empty_vec
         );
     }
 }
