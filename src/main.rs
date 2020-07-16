@@ -91,6 +91,8 @@ pub mod p1513_number_of_substrings_with_only_1s;
 pub mod p0264_ugly_number_ii;
 pub mod p0567_permutation_string;
 pub mod p0093_restore_ip_addresses;
+pub mod p0674_longest_continuous_increasing_subsequence;
+pub mod p0056_merge_intervals;
 
 // 堆栈
 pub mod p0020_valid_parentheses;
