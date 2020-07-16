@@ -94,6 +94,7 @@ pub mod p0093_restore_ip_addresses;
 pub mod p0674_longest_continuous_increasing_subsequence;
 pub mod p0056_merge_intervals;
 pub mod p0374_top_k_frequent_elements;
+pub mod p0128_longest_consecutive_sequence;
 
 // 堆栈
 pub mod p0020_valid_parentheses;
