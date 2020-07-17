@@ -99,6 +99,8 @@ pub mod p0215_kth_largest_element_in_an_array;
 pub mod p0292_nim_game;
 pub mod p0860_lemonade_change;
 pub mod p0200_number_of_islands;
+pub mod p0043_multiply_strings;
+pub mod p0054_spiral_matrix;
 
 // 堆栈
 pub mod p0020_valid_parentheses;
