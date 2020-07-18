@@ -103,6 +103,7 @@ pub mod p0043_multiply_strings;
 pub mod p0054_spiral_matrix;
 pub mod p0874_walking_robot_simulation;
 pub mod p0059_spiral_matrix_ii;
+pub mod p0127_word_ladder;
 
 // 堆栈
 pub mod p0020_valid_parentheses;
