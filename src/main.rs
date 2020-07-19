@@ -111,6 +111,7 @@ pub mod p0073_set_matrix_zeroes;
 pub mod p0075_sort_colors;
 pub mod p0079_word_search;
 pub mod p0130_surrounded_regions;
+pub mod p1518_water_bottles;
 
 // 堆栈
 pub mod p0020_valid_parentheses;
