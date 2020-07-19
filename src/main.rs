@@ -109,6 +109,7 @@ pub mod p0022_generate_parentheses;
 pub mod p0041_first_missing_positive;
 pub mod p0073_set_matrix_zeroes;
 pub mod p0075_sort_colors;
+pub mod p0079_word_search;
 
 // 堆栈
 pub mod p0020_valid_parentheses;
