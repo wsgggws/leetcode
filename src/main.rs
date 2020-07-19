@@ -106,6 +106,7 @@ pub mod p0059_spiral_matrix_ii;
 pub mod p0127_word_ladder;
 pub mod p0017_letter_combinations_of_a_phone_number;
 pub mod p0022_generate_parentheses;
+pub mod p0041_first_missing_positive;
 
 // 堆栈
 pub mod p0020_valid_parentheses;
