@@ -105,6 +105,7 @@ pub mod p0874_walking_robot_simulation;
 pub mod p0059_spiral_matrix_ii;
 pub mod p0127_word_ladder;
 pub mod p0017_letter_combinations_of_a_phone_number;
+pub mod p0022_generate_parentheses;
 
 // 堆栈
 pub mod p0020_valid_parentheses;
