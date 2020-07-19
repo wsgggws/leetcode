@@ -107,6 +107,7 @@ pub mod p0127_word_ladder;
 pub mod p0017_letter_combinations_of_a_phone_number;
 pub mod p0022_generate_parentheses;
 pub mod p0041_first_missing_positive;
+pub mod p0073_set_matrix_zeroes;
 
 // 堆栈
 pub mod p0020_valid_parentheses;
