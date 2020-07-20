@@ -115,6 +115,7 @@ pub mod p1518_water_bottles;
 pub mod lcof_03_shu_zu_zhong_chong_fu_de_shu_zi;
 pub mod p0046_permutations;
 pub mod p0047_permutations_ii;
+pub mod p0077_combinations;
 
 // 堆栈
 pub mod p0020_valid_parentheses;
