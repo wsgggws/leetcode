@@ -112,6 +112,7 @@ pub mod p0075_sort_colors;
 pub mod p0079_word_search;
 pub mod p0130_surrounded_regions;
 pub mod p1518_water_bottles;
+pub mod lcof_03_shu_zu_zhong_chong_fu_de_shu_zi;
 
 // 堆栈
 pub mod p0020_valid_parentheses;
