@@ -42,7 +42,7 @@ impl Solution {
             ans.push(cur_vex.clone());
             return;
         }
-        for i in 0..n {
+        for i in cur_index as i32..n {
             if !visit[i as usize] && cur_index + 1 <= k as usize {
                 if cur_vex.len() > 0 && i + 1 < cur_vex[cur_vex.len() - 1] {
                     continue;
