@@ -119,6 +119,8 @@ pub mod p0047_permutations_ii;
 pub mod p0077_combinations;
 pub mod p0039_combination_sum;
 pub mod p0078_subsets;
+pub mod p0090_subsets_ii;
+pub mod p0004_median_of_two_sorted_arrays;
 
 // 堆栈
 pub mod p0020_valid_parentheses;
