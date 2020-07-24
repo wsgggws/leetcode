@@ -172,12 +172,14 @@ pub mod p0540_single_element_in_a_sorted_array;
 pub mod p0034_find_first_and_last_position_of_element_in_sorted_array;
 pub mod p0367_valid_perfect_square;
 
+// 递推
+pub mod p0070_climbing_stairs;
+
 // 动态规划
 pub mod p0053_maximum_subarray;
 pub mod p0062_unique_paths;
 pub mod p0063_unique_paths_ii;
 pub mod p0064_minimum_path_sum;
-pub mod p0070_climbing_stairs;
 pub mod p0055_jump_game;
 pub mod p0045_jump_game_ii;
 pub mod p0322_coin_change;

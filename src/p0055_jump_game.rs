@@ -24,6 +24,8 @@ pub struct Solution {}
 
 impl Solution {
     pub fn can_jump(nums: Vec<i32>) -> bool {
+        // dp[i] 表示位置i是否可达
+        // dp[i] = dp[j] && nums[j] + j >= i
         let mut dp = vec![false; nums.len()];
         dp[0] = true;
         for i in 1..nums.len() {

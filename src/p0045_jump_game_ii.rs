@@ -29,6 +29,8 @@ pub struct Solution {}
 impl Solution {
     pub fn jump(nums: Vec<i32>) -> i32 {
         // 题目确保总是可达, 初始化到达index需要index步
+        // dp[i] 表示到达i所需要的最少步数
+        // dp[i] = min(dp[i], dp[j]+1) { nums[j] + j >= i }
         let mut dp: Vec<i32> = (0..nums.len() as i32).collect();
         for i in 1..nums.len() {
             for j in 0..i {

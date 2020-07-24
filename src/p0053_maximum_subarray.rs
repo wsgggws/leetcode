@@ -15,6 +15,18 @@
 pub struct Solution {}
 
 impl Solution {
+    pub fn max_sub_array_dp(nums: Vec<i32>) -> i32 {
+        // dp[i] 表示 0..=i 的最大值，
+        // dp[i] = max(dp[i-1]+nums[i], nums[i]);
+        let mut dp: Vec<i32> = vec![0; nums.len()];
+        dp[0] = nums[0];
+        for i in 1..nums.len() {
+            dp[i] = i32::max(nums[i]+dp[i-1], nums[i]);
+        }
+        *dp.iter().max().unwrap()
+    }
+
+    // 空间优化
     pub fn max_sub_array(nums: Vec<i32>) -> i32 {
         let mut max_value = i32::min_value();
         let mut current: i32 = 0;
@@ -28,15 +40,6 @@ impl Solution {
         max_value
     }
 
-    pub fn max_sub_array_dp(nums: Vec<i32>) -> i32 {
-        // dp[i] 表示 0..=i 的最大值，则 dp[i] = max(dp[i-1]+nums[i], nums[i]);
-        let mut dp: Vec<i32> = vec![0; nums.len()];
-        dp[0] = nums[0];
-        for i in 1..nums.len() {
-            dp[i] = i32::max(nums[i]+dp[i-1], nums[i]);
-        }
-        *dp.iter().max().unwrap()
-    }
 }
 
 #[cfg(test)]
