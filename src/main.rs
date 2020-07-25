@@ -4,7 +4,6 @@ pub mod p0015_3sum;
 // TODO
 // pub mod p0016_3sum_closest;
 // pub mod p0018_4sum;
-
 pub mod p0003_longest_substring_without_repeating_characters;
 pub mod p0005_longest_palindromic_substring;
 pub mod p0007_reverse_integer;
@@ -72,8 +71,6 @@ pub mod p0524_longest_word_in_dictionary_through_deleting;
 pub mod p0628_maximum_product_of_three_numbers;
 pub mod p0633_sum_of_square_numbers;
 pub mod p0680_valid_palindrome_ii;
-pub mod p0695_max_area_of_island;
-pub mod p1091_shortest_path_in_binary_matrix;
 pub mod p1470_shuffle_the_array;
 pub mod p1464_maximum_product_of_two_elements_in_an_array;
 pub mod p1487_making_file_names_unique;
@@ -87,40 +84,46 @@ pub mod p0350_intersection_of_two_array_ii;
 pub mod p0455_assign_cookies;
 pub mod p0523_continuous_subarray_sum;
 pub mod p1512_number_of_good_pairs;
-pub mod p1513_number_of_substrings_with_only_1s;
 pub mod p0264_ugly_number_ii;
 pub mod p0567_permutation_string;
 pub mod p0093_restore_ip_addresses;
-pub mod p0674_longest_continuous_increasing_subsequence;
 pub mod p0056_merge_intervals;
 pub mod p0374_top_k_frequent_elements;
 pub mod p0128_longest_consecutive_sequence;
 pub mod p0215_kth_largest_element_in_an_array;
 pub mod p0292_nim_game;
-pub mod p0860_lemonade_change;
-pub mod p0200_number_of_islands;
 pub mod p0043_multiply_strings;
 pub mod p0054_spiral_matrix;
 pub mod p0874_walking_robot_simulation;
 pub mod p0059_spiral_matrix_ii;
-pub mod p0127_word_ladder;
-pub mod p0017_letter_combinations_of_a_phone_number;
-pub mod p0022_generate_parentheses;
 pub mod p0041_first_missing_positive;
 pub mod p0073_set_matrix_zeroes;
 pub mod p0075_sort_colors;
-pub mod p0079_word_search;
-pub mod p0130_surrounded_regions;
 pub mod p1518_water_bottles;
+pub mod p0392_is_subsequence;
+pub mod p1025_divisor_game;
+pub mod p0650_2_keys_keyboard;
+pub mod p0303_range_sum_query_immutable;
+
+// 剑指Offer
 pub mod lcof_03_shu_zu_zhong_chong_fu_de_shu_zi;
 pub mod lcof_05_ti_huan_kong_ge;
-pub mod p0046_permutations;
-pub mod p0047_permutations_ii;
-pub mod p0077_combinations;
-pub mod p0039_combination_sum;
+
+// 深度优先搜索(DFS) or 广度优先搜索(BFS)
 pub mod p0078_subsets;
 pub mod p0090_subsets_ii;
-pub mod p0004_median_of_two_sorted_arrays;
+pub mod p0077_combinations;
+pub mod p0039_combination_sum;
+pub mod p0046_permutations;
+pub mod p0047_permutations_ii;
+pub mod p0130_surrounded_regions;
+pub mod p0079_word_search;
+pub mod p0022_generate_parentheses;
+pub mod p0017_letter_combinations_of_a_phone_number;
+pub mod p0127_word_ladder;
+pub mod p0200_number_of_islands;
+pub mod p1091_shortest_path_in_binary_matrix;
+pub mod p0695_max_area_of_island;
 
 // 堆栈
 pub mod p0020_valid_parentheses;
@@ -140,6 +143,7 @@ pub mod p0682_baseball_game;
 pub mod p0739_daily_temperatures;
 pub mod p0084_largest_rectangle_in_histogram;
 pub mod p0503_next_greater_element_ii;
+pub mod p0860_lemonade_change;
 // TODO
 // pub mod p0042_trapping_rain_water;
 // pub mod p0496_next_greater_element_i;
@@ -171,6 +175,7 @@ pub mod p0744_find_smalllest_greater_than_target;
 pub mod p0540_single_element_in_a_sorted_array;
 pub mod p0034_find_first_and_last_position_of_element_in_sorted_array;
 pub mod p0367_valid_perfect_square;
+pub mod p0004_median_of_two_sorted_arrays;
 
 // 递推
 pub mod p0070_climbing_stairs;
@@ -195,20 +200,18 @@ pub mod p0213_house_robber_ii;
 pub mod p0338_counting_bits;
 pub mod p0343_integer_break;
 pub mod p0357_count_numbers_with_unique_digits;
-pub mod p0392_is_subsequence;
 pub mod p0416_partition_equal_subset_sum;
 pub mod p0746_min_cost_climbing_stairs;
-pub mod p1025_divisor_game;
 pub mod p0377_combination_sum_iv;
 pub mod p0279_perfect_squares;
 pub mod p0646_maximum_length_of_pair_chain;
 pub mod p0376_wiggle_subsequence;
 pub mod p0494_target_sum;
-pub mod p0650_2_keys_keyboard;
-pub mod p0303_range_sum_query_immutable;
 pub mod p0413_arithmetic_slices;
 pub mod p0072_edit_distance;
 pub mod p0518_coin_change_ii;
+pub mod p0674_longest_continuous_increasing_subsequence;
+pub mod p1513_number_of_substrings_with_only_1s;
 // TODO 132, 140, 96, 152, 309, 838, 891, 942, 474, 714, 123, 188, 583
 
 fn main() {

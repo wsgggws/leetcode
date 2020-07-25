@@ -48,7 +48,7 @@ impl Solution {
             if i == 0 {
                 dp[i] = if chs[i] == '1' { 1 } else { 0 };
             } else if chs[i-1] == '1' && chs[i] == '1'{
-                dp[i] = (dp[i] + dp[i-1] + 1) % 1000000007
+                dp[i] = (dp[i-1] + 1) % 1000000007
             } else if chs[i] == '1' {
                 dp[i] = 1;
             }

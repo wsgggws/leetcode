@@ -35,7 +35,7 @@ impl Solution {
         // 用一行实现？迭代器，适配器，消费器, 函数式编程我很喜欢这种方式
         nums[0..n as usize].iter()
             .zip(nums[n as usize ..].iter())
-            .map(|(a, b)| vec![*a, *b])
+            .map(|(&a, &b)| vec![a, b])
             .flatten()
             .collect::<Vec<i32>>()
 

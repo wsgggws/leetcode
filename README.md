@@ -2,8 +2,8 @@
 练习使用Rust语言刷[leetcode](https://leetcode.com/problemset/all/)或者[力扣](https://leetcode-cn.com/problemset/all/)算法题目, 一些不支持Rust判题的会使用Python进行解决,并对解题思路进行简单分析,分类,及总结.
 
 ## Environment
-- rustc 1.37.0
-- cargo 1.37.0
+- rustc 1.44.0
+- cargo 1.44.0
 
 ## How to test
 ```
@@ -11,62 +11,221 @@ cargo test  // 测试所有的测试
 cargo test p0007_reverse_integer  // 只测试单个模块下的测试
 ```
 
-## 基础
-- [3. Longest Substring Without Repeating Characters (Medium)](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
-- [11. Container With Most Water (Medium)](https://leetcode.com/problems/container-with-most-water/)
-- [26. Remove Duplicates from Sorted Array (Easy)](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
+## 题目列表, 自己搜索
+```
+pub mod p0001_two_sum;
+pub mod p0002_add_two_numbers;
+pub mod p0015_3sum;
+// TODO
+// pub mod p0016_3sum_closest;
+// pub mod p0018_4sum;
+pub mod p0003_longest_substring_without_repeating_characters;
+pub mod p0005_longest_palindromic_substring;
+pub mod p0007_reverse_integer;
+pub mod p0008_string_to_integer;
+pub mod p0009_palindrome_number;
+pub mod p0011_container_with_most_water;
+pub mod p0012_integer_to_roman;
+pub mod p0013_roman_to_integer;
+pub mod p0014_longest_common_prefix;
+pub mod p0021_merge_two_sorted_lists;
+pub mod p0026_remove_duplicates_from_sorted_array;
+pub mod p0027_remove_element;
+pub mod p0028_implement_strstr;
+pub mod p0038_count_and_say;
+pub mod p0048_rotate_image;
+pub mod p0049_group_anagrams;
+pub mod p0050_pow_x_n;
+pub mod p0058_length_of_last_word;
+pub mod p0066_plus_one;
+pub mod p0067_add_binary;
+pub mod p0088_merge_sorted_array;
+pub mod p0118_pascals_triangle;
+pub mod p0119_pascals_triangle_ii;
+pub mod p0125_valid_palindrome;
+pub mod p0134_gas_station;
+pub mod p0144_binary_tree_preorder_traversal;
+pub mod p0145_binary_tree_postorder_traversal;
+pub mod p0167_two_sum_ii_array_is_sorted;
+pub mod p0168_excel_sheet_column_title;
+pub mod p0169_majority_element;
+pub mod p0171_excel_sheet_column_number;
+pub mod p0172_factorial_trailing_zeroes;
+pub mod p0189_rotate_array;
+pub mod p0202_happy_number;
+pub mod p0204_count_primes;
+pub mod p0217_contains_duplicate;
+pub mod p0219_contains_duplicate_ii;
+pub mod p0231_power_of_two;
+pub mod p0238_product_of_array_except_self;
+pub mod p0258_add_digits;
+pub mod p0263_ugly_number;
+pub mod p0268_missing_number;
+pub mod p0326_power_of_three;
+pub mod p0342_power_of_four;
+pub mod p0344_reverse_string;
+pub mod p0345_reverse_vowels_of_a_string;
+pub mod p0349_intersection_of_two_arrays;
+pub mod p0371_sum_of_two_integers;
+pub mod p0383_ransom_note;
+pub mod p0387_first_unique_character_in_a_string;
+pub mod p0389_find_the_difference;
+pub mod p0405_convert_a_number_to_hexadecimal;
+pub mod p0412_fizz_buzz;
+pub mod p0414_third_maximum_number;
+pub mod p0415_add_strings;
+pub mod p0434_number_of_segments_in_a_string;
+pub mod p0441_arranging_coins;
+pub mod p0443_string_compression;
+pub mod p0448_find_all_numbers_disappeared_in_an_array;
+pub mod p0453_minimum_moves_to_equal_array_elements;
+pub mod p0461_hamming_distance;
+pub mod p0462_minimum_moves_to_equal_array_element_ii;
+pub mod p0504_base_7;
+pub mod p0524_longest_word_in_dictionary_through_deleting;
+pub mod p0628_maximum_product_of_three_numbers;
+pub mod p0633_sum_of_square_numbers;
+pub mod p0680_valid_palindrome_ii;
+pub mod p1470_shuffle_the_array;
+pub mod p1464_maximum_product_of_two_elements_in_an_array;
+pub mod p1487_making_file_names_unique;
+pub mod p0456_132_pattern;
+pub mod p0283_move_zeroes;
+pub mod p0205_isomorphic_strings;
+pub mod p0242_valid_anagram;
+pub mod p0560_subarray_sum_equals_k;
+pub mod p0724_find_pivot_index;
+pub mod p0350_intersection_of_two_array_ii;
+pub mod p0455_assign_cookies;
+pub mod p0523_continuous_subarray_sum;
+pub mod p1512_number_of_good_pairs;
+pub mod p0264_ugly_number_ii;
+pub mod p0567_permutation_string;
+pub mod p0093_restore_ip_addresses;
+pub mod p0056_merge_intervals;
+pub mod p0374_top_k_frequent_elements;
+pub mod p0128_longest_consecutive_sequence;
+pub mod p0215_kth_largest_element_in_an_array;
+pub mod p0292_nim_game;
+pub mod p0043_multiply_strings;
+pub mod p0054_spiral_matrix;
+pub mod p0874_walking_robot_simulation;
+pub mod p0059_spiral_matrix_ii;
+pub mod p0041_first_missing_positive;
+pub mod p0073_set_matrix_zeroes;
+pub mod p0075_sort_colors;
+pub mod p1518_water_bottles;
+pub mod p0392_is_subsequence;
+pub mod p1025_divisor_game;
+pub mod p0650_2_keys_keyboard;
+pub mod p0303_range_sum_query_immutable;
 
-## 数据结构（堆栈)
-- [232. Implement Queue using Stacks(Easy)](https://leetcode.com/problems/implement-queue-using-stacks/)
-- [32. Longest Valid Parentheses(Hard)](https://leetcode.com/problems/longest-valid-parentheses/)
+// 剑指Offer
+pub mod lcof_03_shu_zu_zhong_chong_fu_de_shu_zi;
+pub mod lcof_05_ti_huan_kong_ge;
 
-## 双指针
-- [167. Two Sum II - Input array is sorted (Easy)](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)
-- [633. Sum of Square Numbers (Easy)](https://leetcode.com/problems/sum-of-square-numbers/)
-- [345. Reverse Vowels of a String (Easy)](https://leetcode.com/problems/reverse-vowels-of-a-string/)
-- [680. Valid Palindrome II (Easy)](https://leetcode.com/problems/valid-palindrome-ii/)
-- [88. Merge Sorted Array (Easy)](https://leetcode.com/problems/merge-sorted-array/)
-- [524. Longest Word in Dictionary through Deleting (Medium)](https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/)
+// 深度优先搜索(DFS) or 广度优先搜索(BFS)
+pub mod p0078_subsets;
+pub mod p0090_subsets_ii;
+pub mod p0077_combinations;
+pub mod p0039_combination_sum;
+pub mod p0046_permutations;
+pub mod p0047_permutations_ii;
+pub mod p0130_surrounded_regions;
+pub mod p0079_word_search;
+pub mod p0022_generate_parentheses;
+pub mod p0017_letter_combinations_of_a_phone_number;
+pub mod p0127_word_ladder;
+pub mod p0200_number_of_islands;
+pub mod p1091_shortest_path_in_binary_matrix;
+pub mod p0695_max_area_of_island;
 
-## 二分法
-- [69. Sqrt(x) (Easy)](https://leetcode.com/problems/sqrtx/)
-- [744. Find Smallest Letter Greater Than Target(Easy)](https://leetcode.com/problems/find-smallest-letter-greater-than-target/)
-- [540. Single Element in a Sorted Array(Medium)](https://leetcode.com/problems/single-element-in-a-sorted-array/)
-- [153. Find Minimum in Rotated Sorted Array (Medium)](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
-- [34. Find First and Last Position of Element in Sorted Array(Medium)](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
-- [367. Valid Perfect Square (Easy)](https://leetcode.com/problems/valid-perfect-square/)
+// 堆栈
+pub mod p0020_valid_parentheses;
+pub mod p0225_implement_stack_using_queues;
+pub mod p0032_longest_valid_parentheses;
+pub mod p0921_minimum_add_to_make_parentheses_valid;
+pub mod p1021_remove_outermost_parentheses;
+pub mod p0071_simplify_path;
+pub mod p0150_evaluate_reverse_polish_notation;
+pub mod p0155_min_stack;
+pub mod p0946_validate_stack_sequences;
+pub mod p1047_remove_all_adjacent_duplicates_in_string;
+pub mod p0880_decoded_strnig_at_index;
+pub mod p0394_decode_string;
+pub mod p0856_score_of_parentheses;
+pub mod p0682_baseball_game;
+pub mod p0739_daily_temperatures;
+pub mod p0084_largest_rectangle_in_histogram;
+pub mod p0503_next_greater_element_ii;
+pub mod p0860_lemonade_change;
+// TODO
+// pub mod p0042_trapping_rain_water;
+// pub mod p0496_next_greater_element_i;
+// pub mod p0901_online_stock_span;
+// pub mod p0907_sum_of_subarray_minimums;
+// pub mod p1019_next_greater_node_in_linked_list;
+// pub mod p0224_basic_calculator;
 
-## 数学
-- [204. Count Primes (Easy)](https://leetcode.com/problems/count-primes/)
-- [504. Base 7 (Easy)](https://leetcode.com/problems/base-7/)
-- [405. Convert a Number to Hexadecimal (Easy)](https://leetcode.com/problems/convert-a-number-to-hexadecimal/)
-- [168. Excel Sheet Column Title (Easy)](https://leetcode.com/problems/excel-sheet-column-title/)
-- [172. Factorial Trailing Zeroes (Easy)](https://leetcode.com/problems/factorial-trailing-zeroes/)
-- [67. Add Binary (Easy)](https://leetcode.com/problems/add-binary/)
-- [415. Add Strings (Easy)](https://leetcode.com/problems/add-strings/)
-- [462. Minimum Moves to Equal Array Elements II (Medium)](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/)
-- [169. Majority Element (Easy)](https://leetcode.com/problems/majority-element/)
-- [238. Product of Array Except Self (Medium)](https://leetcode.com/problems/product-of-array-except-self/)
-- [628. Maximum Product of Three Numbers (Easy)](https://leetcode.com/problems/maximum-product-of-three-numbers/)
-- [62. Unique Paths (Medium)](https://leetcode.com/problems/unique-paths/)
-- [650. 2 Keys Keyboard (Medium)](https://leetcode.com/problems/2-keys-keyboard/)
+// 链表
+// TODO
+// pub mod p0021_merge_two_sorted_lists;
 
-## 动态规划
-- [70. Climbing Stairs (Easy)](https://leetcode.com/problems/climbing-stairs/)
-- [198. House Robber (Easy)](https://leetcode.com/problems/house-robber/)
-- [213. House Robber II (Medium)](https://leetcode.com/problems/house-robber-ii/)
-- [64. Minimum Path Sum (Medium)](https://leetcode.com/problems/minimum-path-sum/)
-- [343. Integer Break (Medim)](https://leetcode.com/problems/integer-break/)
-- [279. Perfect Squares(Medium)](https://leetcode.com/problems/perfect-squares/)
-- [300. Longest Increasing Subsequence (Medium)](https://leetcode.com/problems/longest-increasing-subsequence/)
-- [376. Wiggle Subsequence (Medium)](https://leetcode.com/problems/wiggle-subsequence/)
-- [646. Maximum Length of Pair Chain (Medium)](https://leetcode.com/problems/maximum-length-of-pair-chain/)
-- [1143. Longest Common Subsequence (Medium)](https://leetcode.com/problems/longest-common-subsequence/)
-- [416. Partition Equal Subset Sum (Medium)](https://leetcode.com/problems/partition-equal-subset-sum/)
-- [494. Target Sum (Medium)](https://leetcode.com/problems/target-sum/)
+// 二进制
+pub mod p0136_single_number;
+pub mod p0137_single_number_ii;
+pub mod p0260_single_number_iii;
+pub mod p0191_number_of_1_bits;
+pub mod p0201_bitwise_and_of_numbers_range;
+pub mod p1486_xor_operation_in_an_array;
 
-## 搜索
-### BFS
-- [1091. Shortest Path in Binary Matrix(Medium)](https://leetcode.com/problems/shortest-path-in-binary-matrix/)
-### DFS
-- [695. Max Area of Island (Medium)](https://leetcode.com/problems/max-area-of-island/)
+// 二分查找
+pub mod p0704_binary_search;
+pub mod p0035_search_insert_position;
+pub mod p0074_search_a_2d_matrix;
+pub mod p0153_find_minimum_in_rotated_sorted_array;
+pub mod p0154_find_minimum_in_rotated_sorted_array_ii;
+pub mod p0069_sqrt_x;
+pub mod p0744_find_smalllest_greater_than_target;
+pub mod p0540_single_element_in_a_sorted_array;
+pub mod p0034_find_first_and_last_position_of_element_in_sorted_array;
+pub mod p0367_valid_perfect_square;
+pub mod p0004_median_of_two_sorted_arrays;
+
+// 递推
+pub mod p0070_climbing_stairs;
+
+// 动态规划
+pub mod p0053_maximum_subarray;
+pub mod p0062_unique_paths;
+pub mod p0063_unique_paths_ii;
+pub mod p0064_minimum_path_sum;
+pub mod p0055_jump_game;
+pub mod p0045_jump_game_ii;
+pub mod p0322_coin_change;
+pub mod p0120_triangle;
+pub mod p0300_longest_increasing_subsequence;
+pub mod p0139_word_break;
+pub mod p1143_longest_common_subsequence;
+pub mod p0091_decode_ways;
+pub mod p0121_best_time_to_buy_and_sell_stock;
+pub mod p0122_best_time_to_buy_and_sell_stock_ii;
+pub mod p0198_house_robber;
+pub mod p0213_house_robber_ii;
+pub mod p0338_counting_bits;
+pub mod p0343_integer_break;
+pub mod p0357_count_numbers_with_unique_digits;
+pub mod p0416_partition_equal_subset_sum;
+pub mod p0746_min_cost_climbing_stairs;
+pub mod p0377_combination_sum_iv;
+pub mod p0279_perfect_squares;
+pub mod p0646_maximum_length_of_pair_chain;
+pub mod p0376_wiggle_subsequence;
+pub mod p0494_target_sum;
+pub mod p0413_arithmetic_slices;
+pub mod p0072_edit_distance;
+pub mod p0518_coin_change_ii;
+pub mod p0674_longest_continuous_increasing_subsequence;
+pub mod p1513_number_of_substrings_with_only_1s;
+// TODO 132, 140, 96, 152, 309, 838, 891, 942, 474, 714, 123, 188, 583
+```
