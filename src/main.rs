@@ -104,6 +104,7 @@ pub mod p0392_is_subsequence;
 pub mod p1025_divisor_game;
 pub mod p0650_2_keys_keyboard;
 pub mod p0303_range_sum_query_immutable;
+pub mod p1528_shuffle_string;
 
 // 剑指Offer
 pub mod lcof_03_shu_zu_zhong_chong_fu_de_shu_zi;
