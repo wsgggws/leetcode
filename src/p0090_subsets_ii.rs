@@ -85,27 +85,30 @@ mod tests {
         let empty: Vec<Vec<i32>> = vec![vec![]];
         assert_eq!(Solution::subsets_with_dup(vec![]), empty);
 
-        assert_eq!(
-            Solution::subsets_with_dup(vec![1, 2, 2]),
-            vec![
-                vec![],
-                vec![1],
-                vec![1, 2],
-                vec![1, 2, 2],
-                vec![2],
-                vec![2, 2]
-            ]
-        );
-        assert_eq!(
-            Solution::subsets_with_dup(vec![4, 1, 1]),
-            vec![
-                vec![],
-                vec![4],
-                vec![1],
-                vec![1, 4],
-                vec![1, 1],
-                vec![1, 1, 4]
-            ]
-        );
+        let mut result = Solution::subsets_with_dup(vec![1, 2, 2]);
+        result.sort();
+        let mut expect_result = vec![
+            vec![],
+            vec![1],
+            vec![1, 2],
+            vec![1, 2, 2],
+            vec![2],
+            vec![2, 2]
+        ];
+        expect_result.sort();
+        assert_eq!(result, expect_result);
+
+        let mut result = Solution::subsets_with_dup(vec![4, 1, 1]);
+        result.sort();
+        let mut expect_result = vec![
+            vec![],
+            vec![4],
+            vec![1],
+            vec![1, 4],
+            vec![1, 1],
+            vec![1, 1, 4]
+        ];
+        expect_result.sort();
+        assert_eq!(result, expect_result);
     }
 }
