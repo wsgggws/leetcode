@@ -111,6 +111,7 @@ pub mod p0929_unique_email_addresses;
 // 剑指Offer
 pub mod lcof_03_shu_zu_zhong_chong_fu_de_shu_zi;
 pub mod lcof_05_ti_huan_kong_ge;
+pub mod lcof_13_ji_qi_ren_de_yun_dong_fan_wei;
 
 // 深度优先搜索(DFS) or 广度优先搜索(BFS)
 pub mod p0078_subsets;
