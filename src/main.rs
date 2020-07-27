@@ -106,6 +106,7 @@ pub mod p0650_2_keys_keyboard;
 pub mod p0303_range_sum_query_immutable;
 pub mod p1528_shuffle_string;
 pub mod p1529_bulb_switcher_iv;
+pub mod p0929_unique_email_addresses;
 
 // 剑指Offer
 pub mod lcof_03_shu_zu_zhong_chong_fu_de_shu_zi;
