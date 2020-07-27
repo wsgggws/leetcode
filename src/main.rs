@@ -112,6 +112,7 @@ pub mod p0929_unique_email_addresses;
 pub mod lcof_03_shu_zu_zhong_chong_fu_de_shu_zi;
 pub mod lcof_05_ti_huan_kong_ge;
 pub mod lcof_13_ji_qi_ren_de_yun_dong_fan_wei;
+pub mod lcof_45_ba_shu_zu_pai_cheng_zui_xiao_de_shu;
 
 // 深度优先搜索(DFS) or 广度优先搜索(BFS)
 pub mod p0078_subsets;
