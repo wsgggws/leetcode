@@ -107,6 +107,7 @@ pub mod p0303_range_sum_query_immutable;
 pub mod p1528_shuffle_string;
 pub mod p1529_bulb_switcher_iv;
 pub mod p0929_unique_email_addresses;
+pub mod p0551_student_attendance_record_i;
 
 // 剑指Offer
 pub mod lcof_03_shu_zu_zhong_chong_fu_de_shu_zi;
