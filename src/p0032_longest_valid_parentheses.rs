@@ -16,61 +16,9 @@
 
 pub struct Solution {}
 
-#[derive(Debug)]
-struct Stack<T> {
-    top: Option<Box<StackNode<T>>>,
-    size: usize,
-}
-
-#[derive(Clone,Debug)]
-struct StackNode<T> {
-    val: T,
-    next: Option<Box<StackNode<T>>>,
-}
-
-impl <T> StackNode<T> {
-    fn new(val: T) -> StackNode<T> {
-        StackNode { val: val, next: None }
-    }
-}
-
-impl<T> Stack<T> {
-    fn new() -> Stack<T> {
-        Stack{ top: None, size: 0}
-    }
-
-    fn push(&mut self, val: T) {
-        let mut node = StackNode::new(val);
-        let next = self.top.take();
-        node.next = next;
-        self.top = Some(Box::new(node));
-        self.size += 1usize;
-    }
-
-    fn pop(&mut self) -> Option<T> {
-        let val = self.top.take();
-        match val {
-            None => None,
-            Some(mut x) => {
-                self.top = x.next.take();
-                self.size -= 1usize;
-                Some(x.val)
-            },
-        }
-    }
-
-    fn is_empty(&self) -> bool {
-        if self.size == 0 {
-            true
-        } else {
-            false
-        }
-    }
-}
-
 impl Solution {
     pub fn longest_valid_parentheses(s: String) -> i32 {
-        let mut stack = Stack::new();
+        let mut stack = vec![];
         let mut count = 0;
         let mut result = 0;
 
@@ -90,7 +38,6 @@ impl Solution {
         result * 2
     }
 }
-
 
 #[cfg(test)]
 mod tests {
