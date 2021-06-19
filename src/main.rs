@@ -219,6 +219,7 @@ pub mod p0518_coin_change_ii;
 pub mod p0674_longest_continuous_increasing_subsequence;
 pub mod p1513_number_of_substrings_with_only_1s;
 // TODO 132, 140, 96, 152, 309, 838, 891, 942, 474, 714, 123, 188, 583
+pub mod p0292_nim_game2;
 
 fn main() {
     println!("Hello, rust and leetcode!");

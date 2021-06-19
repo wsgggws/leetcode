@@ -25,7 +25,7 @@
 pub struct Solution {}
 
 impl Solution {
-    // 直接使用模板2, 左开右闭[l, r]
+    // 直接使用模板2, 左开右闭[l, r)
     pub fn search_insert(nums: Vec<i32>, target: i32) -> i32 {
         let (mut start, mut end) = (0, nums.len());
         while start < end {
