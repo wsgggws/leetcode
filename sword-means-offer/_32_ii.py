@@ -1,21 +1,5 @@
 from typing import List
-
-
-# Definition for a binary tree node.
-class TreeNode:
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
-
-
-def create_binary_tree(nums: list, index: int) -> TreeNode:
-    if index >= len(nums) or nums[index] is None:
-        return
-    node = TreeNode(nums[index])
-    node.left = create_binary_tree(nums, index * 2 + 1)
-    node.right = create_binary_tree(nums, index * 2 + 2)
-    return node
+from helper import TreeNode, create_binary_tree
 
 
 class Solution:

@@ -13,32 +13,7 @@
 # 0 <= 节点个数 <= 5000
 
 
-from typing import List
-
-
-# Definition for singly-linked list.
-class ListNode:
-    def __init__(self, x):
-        self.val = x
-        self.next = None
-
-
-def create_link(nums: List[int]) -> ListNode:
-    if len(nums) == 0:
-        return None
-    if len(nums) == 1:
-        return ListNode(nums[0])
-    node = ListNode(nums[0])
-    node.next = create_link(nums[1:])
-    return node
-
-
-def trave_link(head: ListNode) -> List[int]:
-    if head is None:
-        return []
-    if head.next is None:
-        return [head.val]
-    return [head.val] + trave_link(head.next)
+from helper import ListNode, create_link, trave_link
 
 
 class Solution:

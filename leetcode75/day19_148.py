@@ -1,34 +1,5 @@
 from typing import List, Optional
-
-
-# Definition for singly-linked list.
-class ListNode:
-    def __init__(self, x):
-        self.val = x
-        self.next = None
-
-
-def create_link(nums: List[int]) -> Optional[ListNode]:
-    if len(nums) == 0:
-        return None
-    head = ListNode(nums[0])
-    cur = head
-    for num in nums[1:]:
-        node = ListNode(num)
-        cur.next = node
-        cur = node
-    return head
-
-
-def trave_link(head: Optional[ListNode]) -> List[int]:
-    nums = []
-    if head is None:
-        return nums
-    # [h] -> [] -> None
-    while head:
-        nums.append(head.val)
-        head = head.next
-    return nums
+from helper import ListNode, create_link, trave_link
 
 
 class Solution:

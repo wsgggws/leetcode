@@ -1,27 +1,4 @@
-from typing import List
-
-
-class TreeNode:
-    def __init__(self, val):
-        self.val = val
-        self.left = None
-        self.right = None
-
-
-def create_binary_tree(nums: List[int], index: int) -> TreeNode:
-    """
-         1
-      2     2
-    3   4 4   3
-    左右结点分别为 2*i+1, 2*i+2
-    """
-    # 递归创建二叉树
-    if index >= len(nums) or nums[index] is None:
-        return
-    root = TreeNode(nums[index])
-    root.left = create_binary_tree(nums, index * 2 + 1)
-    root.right = create_binary_tree(nums, index * 2 + 2)
-    return root
+from helper import TreeNode, create_binary_tree
 
 
 def bfs(root: TreeNode) -> list:

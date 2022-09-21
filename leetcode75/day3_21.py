@@ -1,34 +1,5 @@
-from typing import List, Optional
-
-
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val: int = val
-        self.next: Optional[ListNode] = next
-
-
-def create_link(nums: List[int]) -> Optional[ListNode]:
-    """创建链表"""
-    if len(nums) == 0:
-        return None
-    head = ListNode(nums[0])
-    cur = head
-    for num in nums[1:]:
-        node = ListNode(num)
-        cur.next = node
-        cur = node
-    return head
-
-
-def trave_link(head: Optional[ListNode]) -> List[int]:
-    """遍历链表"""
-    nums = []
-    if head is None:
-        return nums
-    while head:
-        nums.append(head.val)
-        head = head.next
-    return nums
+from typing import Optional
+from helper import ListNode, create_link, trave_link
 
 
 class Solution:

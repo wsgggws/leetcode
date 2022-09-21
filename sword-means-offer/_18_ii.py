@@ -22,37 +22,7 @@
 # 若使用 C 或 C++ 语言，你不需要 free 或 delete 被删除的节点
 
 
-from typing import List
-
-
-# Definition for singly-linked list.
-class ListNode:
-    def __init__(self, x):
-        self.val = x
-        self.next = None
-
-
-def create_link(nums: List[int]) -> ListNode:
-    if len(nums) == 0:
-        return None
-    head = ListNode(nums[0])
-    cur = head
-    for num in nums[1:]:
-        node = ListNode(num)
-        cur.next = node
-        cur = node
-    return head
-
-
-def trave_link(head: ListNode) -> List[int]:
-    nums = []
-    if head is None:
-        return nums
-    # [h] -> [] -> None
-    while head:
-        nums.append(head.val)
-        head = head.next
-    return nums
+from helper import ListNode, create_link, trave_link
 
 
 class Solution:
