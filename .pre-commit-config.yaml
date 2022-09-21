@@ -1,6 +1,54 @@
-- repo: https://github.com/doublify/pre-commit-rust
-    rev: master
-    hooks:
-    - id: fmt
-      args: ['--verbose', '--edition', '2018', '--']
-    - id: cargo-check
+repos:
+- repo: https://github.com/asottile/yesqa
+  rev: v1.2.2
+  hooks:
+  - id: yesqa
+
+- repo: https://github.com/PyCQA/isort
+  rev: '5.7.0'
+  hooks:
+  - id: isort
+
+- repo: https://github.com/psf/black
+  rev: '22.3.0'
+  hooks:
+  - id: black
+    language_version: python3 # Should be a command that runs python3.6+
+    args:
+    - -l 119
+
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v3.4.0  # Use the ref you want to point at
+  hooks:
+  - id: check-case-conflict
+  - id: destroyed-symlinks
+  - id: debug-statements
+  - id: check-case-conflict
+  - id: check-json
+  - id: check-xml
+  - id: check-executables-have-shebangs
+  - id: check-toml
+  - id: check-xml
+  - id: check-yaml
+  - id: check-added-large-files
+  - id: check-symlinks
+  - id: debug-statements
+  - id: end-of-file-fixer
+  - id: fix-byte-order-marker
+  - id: fix-encoding-pragma
+    args: ['--remove']
+  - id: forbid-new-submodules
+  - id: mixed-line-ending
+  - id: trailing-whitespace
+
+- repo: https://gitlab.com/pycqa/flake8
+  rev: "3.8.4"
+  hooks:
+  - id: flake8
+
+- repo: https://github.com/jorisroovers/gitlint
+  rev: "v0.15.0"
+  hooks:
+  - id: gitlint
+
+default_stages: [commit, push, commit-msg]
