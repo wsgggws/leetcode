@@ -73,7 +73,7 @@ class TreeNode:
         self.right: Optional[TreeNode] = None
 
 
-def create_binary_tree(nums: List[int], index: int) -> Optional[TreeNode]:
+def create_binary_tree(nums: List[Optional[int]], index: int) -> Optional[TreeNode]:
     """
          1
       2     2
@@ -87,3 +87,25 @@ def create_binary_tree(nums: List[int], index: int) -> Optional[TreeNode]:
     root.left = create_binary_tree(nums, index * 2 + 1)
     root.right = create_binary_tree(nums, index * 2 + 2)
     return root
+
+
+def bfs_binary_tree(root: Optional[TreeNode]) -> List[int]:
+    # 层序遍历
+    if root is None:
+        return []
+    queue = [root]
+    results = []
+    while queue:
+        size = len(queue)
+        nums = []
+        next_queue = []
+        for index in range(size):
+            node = queue[index]
+            nums.append(node.val if node else None)
+            if node:
+                next_queue.append(node.left)
+                next_queue.append(node.right)
+        if any(num is not None for num in nums):
+            results.extend(nums)
+        queue = next_queue
+    return results

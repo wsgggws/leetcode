@@ -1,27 +1,5 @@
 from typing import List
-from helper import TreeNode
-
-
-def bfs(root: TreeNode) -> list:
-    # 层序遍历
-    if root is None:
-        return []
-    queue = [root]
-    results = []
-    while queue:
-        size = len(queue)
-        nums = []
-        next_queue = []
-        for index in range(size):
-            node = queue[index]
-            nums.append(node.val if node else None)
-            if node:
-                next_queue.append(node.left)
-                next_queue.append(node.right)
-        if any(num is not None for num in nums):
-            results.extend(nums)
-        queue = next_queue
-    return results
+from helper import TreeNode, bfs_binary_tree
 
 
 def preorder(root: TreeNode, nums) -> None:
@@ -108,10 +86,10 @@ if __name__ == "__main__":
 
     assert nums == [9, 15, 7, 20, 3]
 
-    assert bfs(root) == [3, 9, 20, None, None, 15, 7]
+    assert bfs_binary_tree(root) == [3, 9, 20, None, None, 15, 7]
 
     root = s.buildTree([-1], [-1])
-    assert bfs(root) == [-1]
+    assert bfs_binary_tree(root) == [-1]
 
     root = s.buildTree([], [])
-    assert bfs(root) == []
+    assert bfs_binary_tree(root) == []
