@@ -26,13 +26,13 @@ impl Solution {
             if nums[index] == 0 {
                 nums.swap(index, i);
                 i += 1;
-            } 
+            }
         }
         for index in 0..nums.len() {
             if nums[index] == 1 {
                 nums.swap(index, i);
                 i += 1;
-            } 
+            }
         }
     }
     // 双指针

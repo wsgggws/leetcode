@@ -9,30 +9,30 @@
 
 // Return S after removing the outermost parentheses of every primitive string in the primitive decomposition of S.
 
- 
+
 
 // Example 1:
 
 // Input: "(()())(())"
 // Output: "()()()"
-// Explanation: 
+// Explanation:
 // The input string is "(()())(())", with primitive decomposition "(()())" + "(())".
 // After removing outer parentheses of each part, this is "()()" + "()" = "()()()".
 // Example 2:
 
 // Input: "(()())(())(()(()))"
 // Output: "()()()()(())"
-// Explanation: 
+// Explanation:
 // The input string is "(()())(())(()(()))", with primitive decomposition "(()())" + "(())" + "(()(()))".
 // After removing outer parentheses of each part, this is "()()" + "()" + "()(())" = "()()()()(())".
 // Example 3:
 
 // Input: "()()"
 // Output: ""
-// Explanation: 
+// Explanation:
 // The input string is "()()", with primitive decomposition "()" + "()".
 // After removing outer parentheses of each part, this is "" + "" = "".
- 
+
 
 // Note:
 

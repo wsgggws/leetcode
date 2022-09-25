@@ -69,8 +69,8 @@ class Solution:
             position += 1
 
         # 判断是否溢出大小值
-        MAX_INT = 2 ** 31 - 1
-        MIN_INT = -(2 ** 31)
+        MAX_INT = 2**31 - 1
+        MIN_INT = -(2**31)
         if ans * num_flag > MAX_INT:
             return MAX_INT
         if ans * num_flag < MIN_INT:
@@ -90,5 +90,5 @@ if __name__ == "__main__":
     assert s.strToInt("4193 with words") == 4193
     assert s.strToInt("words and 987") == 0
     assert s.strToInt("-91283472332") == -2147483648
-    assert s.strToInt("+91283472332") == 2 ** 31 - 1
+    assert s.strToInt("+91283472332") == 2**31 - 1
     assert s.strToInt("我就是我") == 0

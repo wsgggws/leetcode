@@ -3,7 +3,7 @@
 
 // You are given coins of different denominations and a total amount of money. Write a function to compute the number of combinations that make up that amount. You may assume that you have infinite number of each kind of coin.
 
- 
+
 
 // Example 1:
 
@@ -21,9 +21,9 @@
 // Explanation: the amount of 3 cannot be made up just with coins of 2.
 // Example 3:
 
-// Input: amount = 10, coins = [10] 
+// Input: amount = 10, coins = [10]
 // Output: 1
- 
+
 
 // Note:
 
@@ -47,7 +47,7 @@ impl Solution {
                     dp[v] += dp[v-cost as usize];
                 }
             }
-        } 
+        }
         dp[amount as usize]
     }
 }

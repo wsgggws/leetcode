@@ -56,9 +56,9 @@ impl Solution {
         let mut groups: Vec<(u64, u64, u64, u64)> = vec![];
         for i in 0..n {
             for j in 0..n {
-                if i + 3 < n { 
+                if i + 3 < n {
                     groups.push((grid[i][j], grid[i+1][j], grid[i+2][j], grid[i+3][j]));
-                } 
+                }
                 if j + 3 < n {
                     groups.push((grid[i][j], grid[i][j+1], grid[i][j+2], grid[i][j+3]));
                 }

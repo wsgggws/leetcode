@@ -101,7 +101,7 @@ mod tests {
                 "kaido(1)".to_string(),
                 "kaido".to_owned(),
                 "kaido(1)".to_owned()
-            ]), 
+            ]),
             vec![
                 "kaido".to_string(),
                 "kaido(1)".to_string(),
@@ -115,7 +115,7 @@ mod tests {
                 "kaido".to_owned(),
                 "kaido(1)".to_owned(),
                 "kaido(2)".to_owned()
-            ]), 
+            ]),
             vec![
                 "kaido".to_owned(),
                 "kaido(1)".to_owned(),

@@ -28,11 +28,11 @@ impl Solution {
                 while let Some(_value) = hash_set.get(&pre) {
                     hash_set.remove(&pre);
                     pre -= 1;
-                } 
+                }
                 while let Some(_value) = hash_set.get(&next) {
                     hash_set.remove(&next);
                     next += 1;
-                } 
+                }
                 result = i32::max(result, next - pre - 1);
             }
         }

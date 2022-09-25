@@ -19,16 +19,16 @@ pub struct Solution {}
 
 impl Solution {
     pub fn quadratic_primes() -> i64 {
-        let mut max_prime_len = 0; 
+        let mut max_prime_len = 0;
         let mut result = 0;
         for a in -999..=999 {
             for b in -1000..=1000 {
                 let prime_series_len = Solution::consecutive_primes(a, b);
                 if prime_series_len > max_prime_len {
-                    max_prime_len = prime_series_len; 
+                    max_prime_len = prime_series_len;
                     // println!("primes:{}, a: {}, b: {}, a*b: {}", prime_series_len, a, b, a * b );
                     result = a * b;
-                } 
+                }
             }
         }
         result

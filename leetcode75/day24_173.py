@@ -1,4 +1,4 @@
-from typing import Optional, List
+from typing import List, Optional
 
 from helper import TreeNode, create_binary_tree
 

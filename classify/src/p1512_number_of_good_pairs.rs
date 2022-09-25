@@ -6,7 +6,7 @@
 
 // Return the number of good pairs.
 
- 
+
 
 // Example 1:
 
@@ -22,7 +22,7 @@
 
 // Input: nums = [1,2,3]
 // Output: 0
- 
+
 
 // Constraints:
 

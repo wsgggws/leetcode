@@ -13,7 +13,7 @@
 
 // Return the minimum number of flips required to form target.
 
- 
+
 
 // Example 1:
 
@@ -37,7 +37,7 @@
 
 // Input: target = "001011101"
 // Output: 5
- 
+
 
 // Constraints:
 

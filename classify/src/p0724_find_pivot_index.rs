@@ -7,7 +7,7 @@
 
 // If no such index exists, we should return -1. If there are multiple pivot indexes, you should return the left-most pivot index.
 
- 
+
 
 // Example 1:
 
@@ -22,7 +22,7 @@
 // Output: -1
 // Explanation:
 // There is no index that satisfies the conditions in the problem statement.
- 
+
 
 // Constraints:
 

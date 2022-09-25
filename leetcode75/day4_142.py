@@ -1,4 +1,5 @@
 from typing import Optional
+
 from helper import ListNode, create_ring_link, trave_ring_link
 
 

@@ -16,7 +16,7 @@ extern crate chrono;
 
 use chrono::prelude::*;
 use chrono::Duration;
- 
+
 pub struct Solution {}
 
 impl Solution {

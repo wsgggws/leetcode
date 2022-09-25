@@ -7,7 +7,7 @@
 
 // Return the shuffled string.
 
- 
+
 
 // Example 1:
 
@@ -32,7 +32,7 @@
 
 // Input: s = "art", indices = [1,0,2]
 // Output: "rat"
- 
+
 
 // Constraints:
 

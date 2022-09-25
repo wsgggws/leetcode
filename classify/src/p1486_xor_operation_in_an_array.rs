@@ -7,7 +7,7 @@
 
 // Return the bitwise XOR of all elements of nums.
 
- 
+
 
 // Example 1:
 
@@ -28,7 +28,7 @@
 
 // Input: n = 10, start = 5
 // Output: 2
- 
+
 
 // Constraints:
 

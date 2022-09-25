@@ -3,7 +3,7 @@
 
 // Write a function that takes an unsigned integer and return the number of '1' bits it has (also known as the Hamming weight).
 
- 
+
 
 // Example 1:
 
@@ -20,7 +20,7 @@
 // Input: 11111111111111111111111111111101
 // Output: 31
 // Explanation: The input binary string 11111111111111111111111111111101 has a total of thirty one '1' bits.
- 
+
 
 // Note:
 

@@ -2,7 +2,7 @@ def _str2int(nums: str) -> int:
     result = 0
     tent = 0
     for num in nums[::-1]:
-        result += int(num) * (10 ** tent)
+        result += int(num) * (10**tent)
         tent += 1
     return result
 

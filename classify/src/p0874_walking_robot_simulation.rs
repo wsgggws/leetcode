@@ -6,7 +6,7 @@
 // -2: turn left 90 degrees
 // -1: turn right 90 degrees
 // 1 <= x <= 9: move forward x units
-// Some of the grid squares are obstacles. 
+// Some of the grid squares are obstacles.
 
 // The i-th obstacle is at grid point (obstacles[i][0], obstacles[i][1])
 
@@ -14,7 +14,7 @@
 
 // Return the square of the maximum Euclidean distance that the robot will be from the origin.
 
- 
+
 
 // Example 1:
 
@@ -26,7 +26,7 @@
 // Input: commands = [4,-1,4,-2,4], obstacles = [[2,4]]
 // Output: 65
 // Explanation: robot will be stuck at (1, 4) before turning left and going to (1, 8)
- 
+
 
 // Note:
 

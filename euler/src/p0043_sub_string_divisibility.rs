@@ -111,10 +111,10 @@ mod tests {
 //     }
 
 //     fn get_numbers_from_parts(div_2: u64, div_3: u64, div_5: u64, div_7: u64, div_11: u64, div_13: u64, div_17: u64) -> Vec<u64> {
-//         let a_str = div_2.to_string() 
-//             + &div_3.to_string() 
-//             + &div_5.to_string() 
-//             + &div_7.to_string() 
+//         let a_str = div_2.to_string()
+//             + &div_3.to_string()
+//             + &div_5.to_string()
+//             + &div_7.to_string()
 //             + &div_11.to_string()
 //             + &div_13.to_string()
 //             + &div_17.to_string();
@@ -133,7 +133,7 @@ mod tests {
 //     }
 
 //     fn is_different_digits(number: u64, max_length: usize) -> bool {
-//         number.to_string().len() == max_length 
+//         number.to_string().len() == max_length
 //             && number.to_string().chars().collect::<HashSet<char>>().len() == max_length
 //     }
 // }

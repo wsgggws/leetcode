@@ -10,7 +10,7 @@
 // It can be written as (A), where A is a valid string.
 // Given a parentheses string, return the minimum number of parentheses we must add to make the resulting string valid.
 
- 
+
 
 // Example 1:
 
@@ -28,7 +28,7 @@
 
 // Input: "()))(("
 // Output: 4
- 
+
 
 // Note:
 

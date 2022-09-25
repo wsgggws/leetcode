@@ -12,22 +12,22 @@
 
 // Input: S = "leet2code3", K = 10
 // Output: "o"
-// Explanation: 
+// Explanation:
 // The decoded string is "leetleetcodeleetleetcodeleetleetcode".
 // The 10th letter in the string is "o".
 // Example 2:
 
 // Input: S = "ha22", K = 5
 // Output: "h"
-// Explanation: 
+// Explanation:
 // The decoded string is "hahahaha".  The 5th letter is "h".
 // Example 3:
 
 // Input: S = "a2345678999999999999999", K = 1
 // Output: "a"
-// Explanation: 
+// Explanation:
 // The decoded string is "a" repeated 8301530446056247680 times.  The 1st letter is "a".
- 
+
 
 // Note:
 

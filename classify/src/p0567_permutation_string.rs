@@ -3,7 +3,7 @@
 
 // Given two strings s1 and s2, write a function to return true if s2 contains the permutation of s1. In other words, one of the first string's permutations is the substring of the second string.
 
- 
+
 
 // Example 1:
 
@@ -14,7 +14,7 @@
 
 // Input:s1= "ab" s2 = "eidboaoo"
 // Output: False
- 
+
 
 // Constraints:
 
@@ -26,8 +26,8 @@ pub struct Solution {}
 use std::collections::HashMap;
 impl Solution {
     pub fn check_inclusion(s1: String, s2: String) -> bool {
-        if s1.len() > s2.len() { 
-            return false; 
+        if s1.len() > s2.len() {
+            return false;
         }
         let hash_map_s1 = Solution::get_hash_map(&s1[..]);
         for i in 0..=s2.len() - s1.len() {

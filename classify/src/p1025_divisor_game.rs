@@ -11,7 +11,7 @@
 
 // Return True if and only if Alice wins the game, assuming both players play optimally.
 
- 
+
 
 // Example 1:
 
@@ -23,7 +23,7 @@
 // Input: 3
 // Output: false
 // Explanation: Alice chooses 1, Bob chooses 1, and Alice has no more moves.
- 
+
 
 // Note:
 
