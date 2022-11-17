@@ -10,7 +10,7 @@ class Solution:
 
 # class Solution:
 #     def permute(self, nums: List[int]) -> List[List[int]]:
-#         """3. 搜索+
+#         """3. 搜索+回溯
 
 #                 1                   2                   3
 #             2       3
