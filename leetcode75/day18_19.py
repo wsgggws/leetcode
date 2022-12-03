@@ -6,18 +6,19 @@ from helper import ListNode, create_link, trave_link
 class Solution:
     def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
         fast, slow, pre = head, head, head
-        while n > 0:
+        while n > 0 and fast:
             fast = fast.next
             n -= 1
-        while fast:
+        while fast and slow:
             fast = fast.next
             pre = slow
             slow = slow.next
-        if pre == slow:
+        if pre and slow and pre == slow:
             head = slow.next
             slow.next = None
-        pre.next = slow.next
-        slow.next = None
+        if pre and slow:
+            pre.next = slow.next
+            slow.next = None
         return head
 
 
