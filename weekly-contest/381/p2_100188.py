@@ -13,17 +13,11 @@ class Solution:
         if x != y:
             distances[x - 1][y - 1] = 1
             distances[y - 1][x - 1] = 1
-        for i in range(len(distances)):
-            for j in range(len(distances)):
-                for k in range(len(distances[j])):
-                    if i != j != k and distances[i][j] > distances[i][k] + distances[k][j]:
+        for k in range(n):
+            for i in range(n):
+                for j in range(n):
+                    if i != j and distances[i][j] > distances[i][k] + distances[k][j]:
                         distances[i][j] = distances[i][k] + distances[k][j]
-        for i in range(len(distances)):
-            for j in range(len(distances)):
-                for k in range(len(distances[j])):
-                    if i != j != k and distances[i][j] > distances[i][k] + distances[k][j]:
-                        distances[i][j] = distances[i][k] + distances[k][j]
-        # TODO, timeout
         counter = Counter()
         for i in range(n):
             for j in range(n):

@@ -23,6 +23,7 @@ class Solution:
         #     ans.append(count)
         # print("[/Users/hj.tian/github/leetcode/weekly-contest/381/p2_100188.py:18] ans: ", ans)
         # return ans
+        ...
 
 
 if __name__ == "__main__":
