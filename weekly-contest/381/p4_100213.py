@@ -3,7 +3,7 @@ from typing import List
 
 class Solution:
     def countOfPairs(self, n: int, x: int, y: int) -> List[int]:
-        # TODO
+        # TODO:
         # distances = {}
         # for i in range(1, n + 1):
         #     for j in range(i + 1, n + 1):
